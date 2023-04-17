@@ -9,6 +9,10 @@ namespace DataAccess.Abstract
 {
     public interface IGrubDal
     {
+        void Add(Grub grub);
+        void Update(Grub grub);
+        void Delete(Grub grub);
+        Grub Get(int id);
         List<Grub> GetList();
     }
 }

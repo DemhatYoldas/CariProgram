@@ -10,5 +10,6 @@ namespace Entities.Concrete
     {
         public int id { get; set; }
         public string Grubadi { get; set; }
+        public bool Durum { get; set; }
     }
 }

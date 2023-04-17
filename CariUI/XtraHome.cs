@@ -29,7 +29,7 @@ namespace CariUI
         private void btnGrubekle_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             XtraGrubcs Grubcs = new XtraGrubcs(_grubService);
-            Grubcs.MdiParent = this;
+            //Grubcs.MdiParent = this;
             Grubcs.Show();
         }
 

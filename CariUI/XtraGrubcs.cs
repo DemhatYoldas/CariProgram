@@ -2,6 +2,8 @@
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework.Context;
 using DevExpress.XtraEditors;
+using Entities.Concrete;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,8 +33,53 @@ namespace CariUI
         private void XtraGrubcs_Load(object sender, EventArgs e)
         {
 
+            GetList();
+        }
+
+        void GetList()
+        {
             var result = _grubServices.GetList();
-            gridControl1.DataSource = result;
+            gC1.DataSource = result;
+        }
+
+        void Clear()
+        {
+            txtGrubName.Text = " ";
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            Grub grub = new Grub
+            {
+                Grubadi = txtGrubName.Text
+            };
+
+            //_grubServices.Add(grub);
+
+            // status yada durum için 
+            var result = _grubServices.Add(grub);
+            if (result)
+            {
+                MessageBox.Show("Grub Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                GetList();
+                Clear();
+            }
+            else
+            {
+                MessageBox.Show("Bir hatayla karşılaştık", "Hata!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void repositoryBtnDelete_Click(object sender, EventArgs e)
+        {
+            if (XtraMessageBox.Show($"{(gridView1.GetFocusedRow() as Grub).Grubadi} Grubunu Silmek İstiyor musunu ?","Sil ?",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
+            {
+                var grub =(gridView1.GetFocusedRow() as Grub);
+                _grubServices.Delete(grub);
+                GetList();
+                Clear();
+            }
+          
         }
     }
 }
