@@ -111,6 +111,7 @@
             Name = "XtraHome";
             Text = "Cari Programı";
             WindowState = FormWindowState.Maximized;
+            Load += XtraHome_Load;
             ((System.ComponentModel.ISupportInitialize)ribbonControl1).EndInit();
             ((System.ComponentModel.ISupportInitialize)xtraTabbedMdiManager1).EndInit();
             ResumeLayout(false);

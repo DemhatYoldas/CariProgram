@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using Business.Abstract;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +14,11 @@ namespace CariUI
 {
     public partial class XtraHome : DevExpress.XtraEditors.XtraForm
     {
-        public XtraHome()
+        private readonly IGrubService _grubService;
+        public XtraHome(IGrubService grubService)
         {
             InitializeComponent();
+            _grubService = grubService;
         }
 
         private void btnclose_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -25,9 +28,14 @@ namespace CariUI
 
         private void btnGrubekle_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            XtraGrubcs Grubcs = new XtraGrubcs();
+            XtraGrubcs Grubcs = new XtraGrubcs(_grubService);
             Grubcs.MdiParent = this;
             Grubcs.Show();
+        }
+
+        private void XtraHome_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
