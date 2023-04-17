@@ -1,6 +1,6 @@
 ﻿using Business.Abstract;
 using Business.Validation.FluentValidation;
-using Core.CrossCuttingConcems;
+using Core.CrossCuttingConcems.Validation;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using FluentValidation.Results;

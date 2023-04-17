@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 using System.Web.WebPages;
 using IValidator = FluentValidation.IValidator;
 
-namespace Core.CrossCuttingConcems
+namespace Core.CrossCuttingConcems.Validation
 {
     public static class ValidationTool
     {
         public static bool Validate(IValidator validator, object entity)
         {
-            var context=new ValidationContext<object>(entity);
+            var context = new ValidationContext<object>(entity);
             var result = validator.Validate(context);
             if (!result.IsValid)
             {
