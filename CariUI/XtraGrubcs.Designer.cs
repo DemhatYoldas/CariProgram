@@ -38,6 +38,8 @@
             colId = new DevExpress.XtraGrid.Columns.GridColumn();
             colName = new DevExpress.XtraGrid.Columns.GridColumn();
             colDurum = new DevExpress.XtraGrid.Columns.GridColumn();
+            colEdit = new DevExpress.XtraGrid.Columns.GridColumn();
+            repositoryBtnEdit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             colDelete = new DevExpress.XtraGrid.Columns.GridColumn();
             repositoryBtnDelete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             txtGrubName = new DevExpress.XtraEditors.TextEdit();
@@ -52,6 +54,7 @@
             layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)gC1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)gridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)repositoryBtnEdit).BeginInit();
             ((System.ComponentModel.ISupportInitialize)repositoryBtnDelete).BeginInit();
             ((System.ComponentModel.ISupportInitialize)txtGrubName.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Root).BeginInit();
@@ -74,7 +77,7 @@
             layoutControl1.Location = new Point(0, 0);
             layoutControl1.Name = "layoutControl1";
             layoutControl1.Root = Root;
-            layoutControl1.Size = new Size(552, 410);
+            layoutControl1.Size = new Size(738, 588);
             layoutControl1.TabIndex = 0;
             layoutControl1.Text = "layoutControl1";
             // 
@@ -82,7 +85,7 @@
             // 
             simpleButton3.Location = new Point(12, 116);
             simpleButton3.Name = "simpleButton3";
-            simpleButton3.Size = new Size(528, 22);
+            simpleButton3.Size = new Size(714, 22);
             simpleButton3.StyleController = layoutControl1;
             simpleButton3.TabIndex = 8;
             simpleButton3.Text = "simpleButton3";
@@ -94,7 +97,7 @@
             btnClose.ImageOptions.Image = (Image)resources.GetObject("btnClose.ImageOptions.Image");
             btnClose.Location = new Point(12, 76);
             btnClose.Name = "btnClose";
-            btnClose.Size = new Size(528, 36);
+            btnClose.Size = new Size(714, 36);
             btnClose.StyleController = layoutControl1;
             btnClose.TabIndex = 7;
             btnClose.Text = "Kapat";
@@ -107,7 +110,7 @@
             btnSave.ImageOptions.Image = (Image)resources.GetObject("btnSave.ImageOptions.Image");
             btnSave.Location = new Point(12, 36);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(528, 36);
+            btnSave.Size = new Size(714, 36);
             btnSave.StyleController = layoutControl1;
             btnSave.TabIndex = 6;
             btnSave.Text = "Kaydet";
@@ -115,17 +118,17 @@
             // 
             // gC1
             // 
-            gC1.Location = new Point(12, 195);
+            gC1.Location = new Point(12, 231);
             gC1.MainView = gridView1;
             gC1.Name = "gC1";
-            gC1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] { repositoryBtnDelete });
-            gC1.Size = new Size(528, 203);
+            gC1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] { repositoryBtnDelete, repositoryBtnEdit });
+            gC1.Size = new Size(714, 345);
             gC1.TabIndex = 5;
             gC1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView1 });
             // 
             // gridView1
             // 
-            gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] { colId, colName, colDurum, colDelete });
+            gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] { colId, colName, colDurum, colEdit, colDelete });
             gridView1.GridControl = gC1;
             gridView1.Name = "gridView1";
             // 
@@ -153,6 +156,22 @@
             colDurum.Visible = true;
             colDurum.VisibleIndex = 2;
             // 
+            // colEdit
+            // 
+            colEdit.Caption = "Güncelle";
+            colEdit.ColumnEdit = repositoryBtnEdit;
+            colEdit.Name = "colEdit";
+            colEdit.Visible = true;
+            colEdit.VisibleIndex = 4;
+            // 
+            // repositoryBtnEdit
+            // 
+            repositoryBtnEdit.AutoHeight = false;
+            repositoryBtnEdit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Undo) });
+            repositoryBtnEdit.Name = "repositoryBtnEdit";
+            repositoryBtnEdit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            repositoryBtnEdit.ButtonClick += repositoryBtnEdit_ButtonClick;
+            // 
             // colDelete
             // 
             colDelete.Caption = "Sil";
@@ -175,7 +194,7 @@
             txtGrubName.EditValue = "";
             txtGrubName.Location = new Point(87, 12);
             txtGrubName.Name = "txtGrubName";
-            txtGrubName.Size = new Size(453, 20);
+            txtGrubName.Size = new Size(639, 20);
             txtGrubName.StyleController = layoutControl1;
             txtGrubName.TabIndex = 4;
             // 
@@ -185,7 +204,7 @@
             Root.GroupBordersVisible = false;
             Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] { layoutControlItem1, emptySpaceItem1, layoutControlItem2, layoutControlItem3, layoutControlItem4, layoutControlItem5 });
             Root.Name = "Root";
-            Root.Size = new Size(552, 410);
+            Root.Size = new Size(738, 588);
             Root.TextVisible = false;
             // 
             // layoutControlItem1
@@ -193,7 +212,7 @@
             layoutControlItem1.Control = txtGrubName;
             layoutControlItem1.Location = new Point(0, 0);
             layoutControlItem1.Name = "layoutControlItem1";
-            layoutControlItem1.Size = new Size(532, 24);
+            layoutControlItem1.Size = new Size(718, 24);
             layoutControlItem1.Text = "Cari Grub Adı";
             layoutControlItem1.TextSize = new Size(63, 13);
             // 
@@ -202,15 +221,15 @@
             emptySpaceItem1.AllowHotTrack = false;
             emptySpaceItem1.Location = new Point(0, 130);
             emptySpaceItem1.Name = "emptySpaceItem1";
-            emptySpaceItem1.Size = new Size(532, 53);
+            emptySpaceItem1.Size = new Size(718, 89);
             emptySpaceItem1.TextSize = new Size(0, 0);
             // 
             // layoutControlItem2
             // 
             layoutControlItem2.Control = gC1;
-            layoutControlItem2.Location = new Point(0, 183);
+            layoutControlItem2.Location = new Point(0, 219);
             layoutControlItem2.Name = "layoutControlItem2";
-            layoutControlItem2.Size = new Size(532, 207);
+            layoutControlItem2.Size = new Size(718, 349);
             layoutControlItem2.TextSize = new Size(0, 0);
             layoutControlItem2.TextVisible = false;
             // 
@@ -219,7 +238,7 @@
             layoutControlItem3.Control = btnSave;
             layoutControlItem3.Location = new Point(0, 24);
             layoutControlItem3.Name = "layoutControlItem3";
-            layoutControlItem3.Size = new Size(532, 40);
+            layoutControlItem3.Size = new Size(718, 40);
             layoutControlItem3.TextSize = new Size(0, 0);
             layoutControlItem3.TextVisible = false;
             // 
@@ -228,7 +247,7 @@
             layoutControlItem4.Control = btnClose;
             layoutControlItem4.Location = new Point(0, 64);
             layoutControlItem4.Name = "layoutControlItem4";
-            layoutControlItem4.Size = new Size(532, 40);
+            layoutControlItem4.Size = new Size(718, 40);
             layoutControlItem4.TextSize = new Size(0, 0);
             layoutControlItem4.TextVisible = false;
             // 
@@ -237,7 +256,7 @@
             layoutControlItem5.Control = simpleButton3;
             layoutControlItem5.Location = new Point(0, 104);
             layoutControlItem5.Name = "layoutControlItem5";
-            layoutControlItem5.Size = new Size(532, 26);
+            layoutControlItem5.Size = new Size(718, 26);
             layoutControlItem5.TextSize = new Size(0, 0);
             layoutControlItem5.TextVisible = false;
             // 
@@ -245,7 +264,7 @@
             // 
             AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(552, 410);
+            ClientSize = new Size(738, 588);
             Controls.Add(layoutControl1);
             IconOptions.LargeImage = (Image)resources.GetObject("XtraGrubcs.IconOptions.LargeImage");
             Name = "XtraGrubcs";
@@ -256,6 +275,7 @@
             layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)gC1).EndInit();
             ((System.ComponentModel.ISupportInitialize)gridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)repositoryBtnEdit).EndInit();
             ((System.ComponentModel.ISupportInitialize)repositoryBtnDelete).EndInit();
             ((System.ComponentModel.ISupportInitialize)txtGrubName.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)Root).EndInit();
@@ -289,5 +309,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn colDurum;
         private DevExpress.XtraGrid.Columns.GridColumn colDelete;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryBtnDelete;
+        private DevExpress.XtraGrid.Columns.GridColumn colEdit;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryBtnEdit;
     }
 }

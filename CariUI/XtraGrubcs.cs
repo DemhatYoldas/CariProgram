@@ -19,6 +19,8 @@ namespace CariUI
     public partial class XtraGrubcs : DevExpress.XtraEditors.XtraForm
     {
         private readonly IGrubService _grubServices;
+        int _id;
+
         public XtraGrubcs(IGrubService grubService)
         {
             InitializeComponent();
@@ -27,7 +29,15 @@ namespace CariUI
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (btnClose.Text == "Vazgeç")
+            {
+                Clear();
+            }
+            else
+            {
+                this.Close();
+            }
+
         }
 
         private void XtraGrubcs_Load(object sender, EventArgs e)
@@ -45,41 +55,75 @@ namespace CariUI
         void Clear()
         {
             txtGrubName.Text = " ";
+            btnClose.Text = "Kapat";
+            btnSave.Text = "Kaydet";
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Grub grub = new Grub
+            // Güncelleme işlemi
+            if (btnSave.Text == "Güncelle")
             {
-                Grubadi = txtGrubName.Text
-            };
+                var findgrup = _grubServices.Get(_id);
+                findgrup.Grubadi = txtGrubName.Text;
+                var result = _grubServices.Update(findgrup);
+                if (result)
+                {
 
-            //_grubServices.Add(grub);
+                    GetList();
+                    Clear();
 
-            // status yada durum için 
-            var result = _grubServices.Add(grub);
-            if (result)
-            {
-                MessageBox.Show("Grub Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                GetList();
-                Clear();
+                }
+
             }
             else
             {
-                MessageBox.Show("Bir hatayla karşılaştık", "Hata!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Kaydet işlemi
+                Grub grub = new Grub
+                {
+                    Grubadi = txtGrubName.Text
+                };
+
+                //_grubServices.Add(grub);
+
+                // status yada durum için 
+                var result = _grubServices.Add(grub);
+                if (result)
+                {
+
+                    GetList();
+                    Clear();
+                }
+
             }
+
         }
 
         private void repositoryBtnDelete_Click(object sender, EventArgs e)
         {
-            if (XtraMessageBox.Show($"{(gridView1.GetFocusedRow() as Grub).Grubadi} Grubunu Silmek İstiyor musunu ?","Sil ?",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
+            if (XtraMessageBox.Show($"{(gridView1.GetFocusedRow() as Grub).Grubadi} Grubunu Silmek İstiyor musunu ?", "Sil ?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                var grub =(gridView1.GetFocusedRow() as Grub);
+                var grub = (gridView1.GetFocusedRow() as Grub);
                 _grubServices.Delete(grub);
                 GetList();
                 Clear();
             }
-          
+
+        }
+
+        private void gC1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void repositoryBtnEdit_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            _id = (gridView1.GetFocusedRow() as Grub).id;
+            string grubadi = (gridView1.GetFocusedRow() as Grub).Grubadi;
+            txtGrubName.Text = grubadi;
+            btnSave.Text = "Güncelle";
+            btnClose.Text = "Vazgeç";
+
         }
     }
 }

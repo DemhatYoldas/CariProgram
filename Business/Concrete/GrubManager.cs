@@ -1,6 +1,9 @@
 ﻿using Business.Abstract;
+using Business.Validation.FluentValidation;
+using Core.CrossCuttingConcems;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using FluentValidation.Results;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,8 +23,15 @@ namespace Business.Concrete
 
         public bool Add(Grub grub)
         {
-            _grubDal.Add(grub);
-            return true;
+            bool validation = ValidationTool.Validate(new GrubValidator(), grub);
+            if (validation)
+            {
+                _grubDal.Add(grub);
+                MessageBox.Show("Grub Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return true;
+
+            }
+            return false;
         }
 
         public void Delete(Grub grub)
@@ -31,7 +41,7 @@ namespace Business.Concrete
 
         public Grub Get(int id)
         {
-           return _grubDal.Get(id);
+            return _grubDal.Get(id);
         }
 
         public List<Grub> GetList()
@@ -39,9 +49,18 @@ namespace Business.Concrete
             return _grubDal.GetList();
         }
 
-        public void Update(Grub grub)
+        public bool Update(Grub grub)
         {
-            _grubDal.Update(grub);
+            bool validation = ValidationTool.Validate(new GrubValidator(), grub);
+            if (validation)
+            {
+                _grubDal.Update(grub);
+                MessageBox.Show("Güncelleme işlemi başarıyla Gerçekleşti", "Başarıyla", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return true;
+
+            }
+            return false;
+
         }
     }
 }
