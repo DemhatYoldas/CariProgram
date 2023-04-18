@@ -9,26 +9,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace CariUI
 {
-    public partial class XtraCariEkle : DevExpress.XtraEditors.XtraForm
+    public partial class XtraTurekle : DevExpress.XtraEditors.XtraForm
     {
         IGrubService _grubService;
 
-        public XtraCariEkle(IGrubService grubService)
+        public XtraTurekle(IGrubService grubService)
         {
             InitializeComponent();
             _grubService = grubService;
         }
 
-        private void XtraCariEkle_Load(object sender, EventArgs e)
+        int grubId = 0;
+
+        private void XtraTurek_Load(object sender, EventArgs e)
         {
             var grubs = _grubService.GetList();
             foreach (var grub in grubs)
             {
-                comboBoxgrub.Properties.Items.Add(grub.Grubadi);
+                comboBoxGrub.Properties.Items.Add(grub.Grubadi);
             }
+
         }
 
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -36,17 +38,10 @@ namespace CariUI
             this.Close();
         }
 
-        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void comboBoxGrub_SelectedIndexChanged(object sender, EventArgs e)
         {
-            XtraGrubcs Grubcs = new XtraGrubcs(_grubService);
-            Grubcs.Show();
-
-        }
-
-        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            XtraTurekle turek = new XtraTurekle(_grubService);
-            turek.Show();
+            grubId = _grubService.GetgrubId(comboBoxGrub.Text);
+            //MessageBox.Show(grubId.ToString()); id kontrol ettik 
         }
     }
 }

@@ -49,6 +49,12 @@ namespace Business.Concrete
             return _grubDal.GetList();
         }
 
+        public int GetgrubId(string grubName)
+        {
+            // tur ekleme işleminde grub name göre id kaydedecez
+          return _grubDal.GetList().Where(g=>g.Grubadi==grubName).Select(s=>s.id).FirstOrDefault();
+        }
+
         public bool Update(Grub grub)
         {
             bool validation = ValidationTool.Validate(new GrubValidator(), grub);

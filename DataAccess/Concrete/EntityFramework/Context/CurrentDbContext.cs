@@ -16,6 +16,12 @@ namespace DataAccess.Concrete.EntityFramework.Context
         }
 
         public DbSet<Grub>  Grubs { get; set; }
+        public DbSet<Tur>  Turs { get; set; }
+        public DbSet<Ulke>  Ulkes { get; set; }
+        public DbSet<Sehir> Sehirs { get; set; }
+        public DbSet<İlce> İlces  { get; set; }
+        public DbSet<Bilgilerim> Bilgilerims  { get; set; }
+
 
     }
 }

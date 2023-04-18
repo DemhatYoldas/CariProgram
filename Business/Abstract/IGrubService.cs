@@ -13,6 +13,7 @@ namespace Business.Abstract
         bool Update(Grub grub);
         void Delete(Grub grub);
         Grub Get(int id);
+        int GetgrubId(string grubName);
         List<Grub> GetList();
     }
 }

@@ -31,18 +31,21 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XtraCariEkle));
             layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            textadsoyad = new DevExpress.XtraEditors.TextEdit();
             barManager1 = new DevExpress.XtraBars.BarManager(components);
             bar2 = new DevExpress.XtraBars.Bar();
             barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             bar3 = new DevExpress.XtraBars.Bar();
             barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            textadsoyad = new DevExpress.XtraEditors.TextEdit();
             textvergino = new DevExpress.XtraEditors.TextEdit();
             textvergidaire = new DevExpress.XtraEditors.TextEdit();
             texturl = new DevExpress.XtraEditors.TextEdit();
@@ -85,8 +88,8 @@
             layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)layoutControl1).BeginInit();
             layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)barManager1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)textadsoyad.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barManager1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)textvergino.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)textvergidaire.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)texturl.Properties).BeginInit();
@@ -154,9 +157,28 @@
             layoutControl1.Location = new Point(0, 24);
             layoutControl1.Name = "layoutControl1";
             layoutControl1.Root = Root;
-            layoutControl1.Size = new Size(362, 518);
+            layoutControl1.Size = new Size(564, 492);
             layoutControl1.TabIndex = 0;
             layoutControl1.Text = "layoutControl1";
+            // 
+            // simpleButton1
+            // 
+            simpleButton1.ImageOptions.Image = (Image)resources.GetObject("simpleButton1.ImageOptions.Image");
+            simpleButton1.Location = new Point(12, 444);
+            simpleButton1.Name = "simpleButton1";
+            simpleButton1.Size = new Size(540, 36);
+            simpleButton1.StyleController = layoutControl1;
+            simpleButton1.TabIndex = 19;
+            simpleButton1.Text = "Cari Bilgileri Kaydet";
+            // 
+            // textadsoyad
+            // 
+            textadsoyad.Location = new Point(113, 420);
+            textadsoyad.MenuManager = barManager1;
+            textadsoyad.Name = "textadsoyad";
+            textadsoyad.Size = new Size(439, 20);
+            textadsoyad.StyleController = layoutControl1;
+            textadsoyad.TabIndex = 18;
             // 
             // barManager1
             // 
@@ -166,9 +188,9 @@
             barManager1.DockControls.Add(barDockControlLeft);
             barManager1.DockControls.Add(barDockControlRight);
             barManager1.Form = this;
-            barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] { barButtonItem1, barButtonItem2, barButtonItem3 });
+            barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] { barButtonItem1, barButtonItem2, barButtonItem3, barButtonItem4, barButtonItem5, barButtonItem6 });
             barManager1.MainMenu = bar2;
-            barManager1.MaxItemId = 3;
+            barManager1.MaxItemId = 6;
             barManager1.StatusBar = bar3;
             // 
             // bar2
@@ -177,7 +199,7 @@
             bar2.DockCol = 0;
             bar2.DockRow = 0;
             bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            bar2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] { new DevExpress.XtraBars.LinkPersistInfo(barButtonItem1), new DevExpress.XtraBars.LinkPersistInfo(barButtonItem2), new DevExpress.XtraBars.LinkPersistInfo(barButtonItem3) });
+            bar2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] { new DevExpress.XtraBars.LinkPersistInfo(barButtonItem1), new DevExpress.XtraBars.LinkPersistInfo(barButtonItem2), new DevExpress.XtraBars.LinkPersistInfo(barButtonItem4), new DevExpress.XtraBars.LinkPersistInfo(barButtonItem3), new DevExpress.XtraBars.LinkPersistInfo(barButtonItem5), new DevExpress.XtraBars.LinkPersistInfo(barButtonItem6) });
             bar2.OptionsBar.MultiLine = true;
             bar2.OptionsBar.UseWholeRow = true;
             bar2.Text = "Main menu";
@@ -194,13 +216,23 @@
             // 
             // barButtonItem2
             // 
-            barButtonItem2.Caption = "Grub ve Tür Ekleme";
+            barButtonItem2.Caption = "Grub Ekleme";
             barButtonItem2.Id = 1;
             barButtonItem2.ImageOptions.Image = (Image)resources.GetObject("barButtonItem2.ImageOptions.Image");
             barButtonItem2.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem2.ImageOptions.LargeImage");
             barButtonItem2.Name = "barButtonItem2";
             barButtonItem2.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             barButtonItem2.ItemClick += barButtonItem2_ItemClick;
+            // 
+            // barButtonItem4
+            // 
+            barButtonItem4.Caption = "Tür Ekleme";
+            barButtonItem4.Id = 3;
+            barButtonItem4.ImageOptions.Image = (Image)resources.GetObject("barButtonItem4.ImageOptions.Image");
+            barButtonItem4.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem4.ImageOptions.LargeImage");
+            barButtonItem4.Name = "barButtonItem4";
+            barButtonItem4.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            barButtonItem4.ItemClick += barButtonItem4_ItemClick;
             // 
             // barButtonItem3
             // 
@@ -210,6 +242,24 @@
             barButtonItem3.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem3.ImageOptions.LargeImage");
             barButtonItem3.Name = "barButtonItem3";
             barButtonItem3.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // barButtonItem5
+            // 
+            barButtonItem5.Caption = "Şehir Ekle";
+            barButtonItem5.Id = 4;
+            barButtonItem5.ImageOptions.Image = (Image)resources.GetObject("barButtonItem5.ImageOptions.Image");
+            barButtonItem5.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem5.ImageOptions.LargeImage");
+            barButtonItem5.Name = "barButtonItem5";
+            barButtonItem5.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // barButtonItem6
+            // 
+            barButtonItem6.Caption = "İlçe Ekle";
+            barButtonItem6.Id = 5;
+            barButtonItem6.ImageOptions.Image = (Image)resources.GetObject("barButtonItem6.ImageOptions.Image");
+            barButtonItem6.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem6.ImageOptions.LargeImage");
+            barButtonItem6.Name = "barButtonItem6";
+            barButtonItem6.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
             // bar3
             // 
@@ -229,15 +279,15 @@
             barDockControlTop.Dock = DockStyle.Top;
             barDockControlTop.Location = new Point(0, 0);
             barDockControlTop.Manager = barManager1;
-            barDockControlTop.Size = new Size(362, 24);
+            barDockControlTop.Size = new Size(564, 24);
             // 
             // barDockControlBottom
             // 
             barDockControlBottom.CausesValidation = false;
             barDockControlBottom.Dock = DockStyle.Bottom;
-            barDockControlBottom.Location = new Point(0, 542);
+            barDockControlBottom.Location = new Point(0, 516);
             barDockControlBottom.Manager = barManager1;
-            barDockControlBottom.Size = new Size(362, 20);
+            barDockControlBottom.Size = new Size(564, 20);
             // 
             // barDockControlLeft
             // 
@@ -245,34 +295,15 @@
             barDockControlLeft.Dock = DockStyle.Left;
             barDockControlLeft.Location = new Point(0, 24);
             barDockControlLeft.Manager = barManager1;
-            barDockControlLeft.Size = new Size(0, 518);
+            barDockControlLeft.Size = new Size(0, 492);
             // 
             // barDockControlRight
             // 
             barDockControlRight.CausesValidation = false;
             barDockControlRight.Dock = DockStyle.Right;
-            barDockControlRight.Location = new Point(362, 24);
+            barDockControlRight.Location = new Point(564, 24);
             barDockControlRight.Manager = barManager1;
-            barDockControlRight.Size = new Size(0, 518);
-            // 
-            // simpleButton1
-            // 
-            simpleButton1.ImageOptions.Image = (Image)resources.GetObject("simpleButton1.ImageOptions.Image");
-            simpleButton1.Location = new Point(12, 444);
-            simpleButton1.Name = "simpleButton1";
-            simpleButton1.Size = new Size(338, 36);
-            simpleButton1.StyleController = layoutControl1;
-            simpleButton1.TabIndex = 19;
-            simpleButton1.Text = "Cari Bilgileri Kaydet";
-            // 
-            // textadsoyad
-            // 
-            textadsoyad.Location = new Point(113, 420);
-            textadsoyad.MenuManager = barManager1;
-            textadsoyad.Name = "textadsoyad";
-            textadsoyad.Size = new Size(237, 20);
-            textadsoyad.StyleController = layoutControl1;
-            textadsoyad.TabIndex = 18;
+            barDockControlRight.Size = new Size(0, 492);
             // 
             // textvergino
             // 
@@ -282,7 +313,7 @@
             textvergino.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
             textvergino.Properties.MaskSettings.Set("MaskManagerSignature", "isOptimistic=False");
             textvergino.Properties.MaskSettings.Set("mask", "\\d\\d\\d\\d\\d");
-            textvergino.Size = new Size(237, 20);
+            textvergino.Size = new Size(439, 20);
             textvergino.StyleController = layoutControl1;
             textvergino.TabIndex = 17;
             // 
@@ -291,7 +322,7 @@
             textvergidaire.Location = new Point(113, 372);
             textvergidaire.MenuManager = barManager1;
             textvergidaire.Name = "textvergidaire";
-            textvergidaire.Size = new Size(237, 20);
+            textvergidaire.Size = new Size(439, 20);
             textvergidaire.StyleController = layoutControl1;
             textvergidaire.TabIndex = 16;
             // 
@@ -300,7 +331,7 @@
             texturl.Location = new Point(113, 348);
             texturl.MenuManager = barManager1;
             texturl.Name = "texturl";
-            texturl.Size = new Size(237, 20);
+            texturl.Size = new Size(439, 20);
             texturl.StyleController = layoutControl1;
             texturl.TabIndex = 15;
             // 
@@ -309,7 +340,7 @@
             textEposta.Location = new Point(113, 324);
             textEposta.MenuManager = barManager1;
             textEposta.Name = "textEposta";
-            textEposta.Size = new Size(237, 20);
+            textEposta.Size = new Size(439, 20);
             textEposta.StyleController = layoutControl1;
             textEposta.TabIndex = 14;
             // 
@@ -321,7 +352,7 @@
             textgsm.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
             textgsm.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
             textgsm.Properties.MaskSettings.Set("mask", "(000) 000-0000");
-            textgsm.Size = new Size(237, 20);
+            textgsm.Size = new Size(439, 20);
             textgsm.StyleController = layoutControl1;
             textgsm.TabIndex = 13;
             // 
@@ -333,7 +364,7 @@
             textfax.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
             textfax.Properties.MaskSettings.Set("MaskManagerSignature", "isOptimistic=False");
             textfax.Properties.MaskSettings.Set("mask", "\\d\\d\\d\\d\\d");
-            textfax.Size = new Size(237, 20);
+            textfax.Size = new Size(439, 20);
             textfax.StyleController = layoutControl1;
             textfax.TabIndex = 12;
             // 
@@ -347,7 +378,7 @@
             textsabitno.Properties.MaskSettings.Set("mask", "(\\d\\d\\d) \\d\\d\\d-\\d\\d\\d\\d");
             textsabitno.Properties.MaskSettings.Set("culture", "tr");
             textsabitno.Properties.MaskSettings.Set("placeholder", '9');
-            textsabitno.Size = new Size(237, 20);
+            textsabitno.Size = new Size(439, 20);
             textsabitno.StyleController = layoutControl1;
             textsabitno.TabIndex = 11;
             // 
@@ -356,7 +387,7 @@
             textadres.Location = new Point(113, 228);
             textadres.MenuManager = barManager1;
             textadres.Name = "textadres";
-            textadres.Size = new Size(237, 20);
+            textadres.Size = new Size(439, 20);
             textadres.StyleController = layoutControl1;
             textadres.TabIndex = 10;
             // 
@@ -368,7 +399,7 @@
             textpostakod.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
             textpostakod.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
             textpostakod.Properties.MaskSettings.Set("mask", "00000");
-            textpostakod.Size = new Size(237, 20);
+            textpostakod.Size = new Size(439, 20);
             textpostakod.StyleController = layoutControl1;
             textpostakod.TabIndex = 9;
             // 
@@ -379,7 +410,7 @@
             gridLookUpilce.Name = "gridLookUpilce";
             gridLookUpilce.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
             gridLookUpilce.Properties.PopupView = gridLookUpEdit3View;
-            gridLookUpilce.Size = new Size(237, 20);
+            gridLookUpilce.Size = new Size(439, 20);
             gridLookUpilce.StyleController = layoutControl1;
             gridLookUpilce.TabIndex = 8;
             // 
@@ -397,7 +428,7 @@
             gridLookUpsehir.Name = "gridLookUpsehir";
             gridLookUpsehir.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
             gridLookUpsehir.Properties.PopupView = gridLookUpEdit2View;
-            gridLookUpsehir.Size = new Size(237, 20);
+            gridLookUpsehir.Size = new Size(439, 20);
             gridLookUpsehir.StyleController = layoutControl1;
             gridLookUpsehir.TabIndex = 7;
             // 
@@ -415,7 +446,7 @@
             gridLookUpulke.Name = "gridLookUpulke";
             gridLookUpulke.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
             gridLookUpulke.Properties.PopupView = gridLookUpEdit1View;
-            gridLookUpulke.Size = new Size(237, 20);
+            gridLookUpulke.Size = new Size(439, 20);
             gridLookUpulke.StyleController = layoutControl1;
             gridLookUpulke.TabIndex = 6;
             // 
@@ -431,7 +462,7 @@
             textcariunvan.Location = new Point(113, 84);
             textcariunvan.MenuManager = barManager1;
             textcariunvan.Name = "textcariunvan";
-            textcariunvan.Size = new Size(237, 20);
+            textcariunvan.Size = new Size(439, 20);
             textcariunvan.StyleController = layoutControl1;
             textcariunvan.TabIndex = 4;
             // 
@@ -443,7 +474,7 @@
             textcarikod.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
             textcarikod.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
             textcarikod.Properties.MaskSettings.Set("mask", "00000");
-            textcarikod.Size = new Size(237, 20);
+            textcarikod.Size = new Size(439, 20);
             textcarikod.StyleController = layoutControl1;
             textcarikod.TabIndex = 3;
             // 
@@ -452,7 +483,7 @@
             texttabela.Location = new Point(113, 108);
             texttabela.MenuManager = barManager1;
             texttabela.Name = "texttabela";
-            texttabela.Size = new Size(237, 20);
+            texttabela.Size = new Size(439, 20);
             texttabela.StyleController = layoutControl1;
             texttabela.TabIndex = 5;
             // 
@@ -463,7 +494,7 @@
             comboBoxtur.Name = "comboBoxtur";
             comboBoxtur.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
             comboBoxtur.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            comboBoxtur.Size = new Size(237, 20);
+            comboBoxtur.Size = new Size(439, 20);
             comboBoxtur.StyleController = layoutControl1;
             comboBoxtur.TabIndex = 2;
             // 
@@ -474,7 +505,7 @@
             comboBoxgrub.Name = "comboBoxgrub";
             comboBoxgrub.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
             comboBoxgrub.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            comboBoxgrub.Size = new Size(237, 20);
+            comboBoxgrub.Size = new Size(439, 20);
             comboBoxgrub.StyleController = layoutControl1;
             comboBoxgrub.TabIndex = 0;
             // 
@@ -484,7 +515,7 @@
             Root.GroupBordersVisible = false;
             Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] { layoutControlItem1, layoutControlItem2, layoutControlItem4, layoutControlItem5, layoutControlItem7, layoutControlItem8, layoutControlItem9, layoutControlItem10, layoutControlItem11, layoutControlItem12, layoutControlItem13, layoutControlItem15, layoutControlItem16, layoutControlItem17, layoutControlItem18, layoutControlItem19, layoutControlItem20, layoutControlItem3, layoutControlItem14 });
             Root.Name = "Root";
-            Root.Size = new Size(362, 518);
+            Root.Size = new Size(564, 492);
             Root.TextVisible = false;
             // 
             // layoutControlItem1
@@ -492,7 +523,7 @@
             layoutControlItem1.Control = comboBoxgrub;
             layoutControlItem1.Location = new Point(0, 0);
             layoutControlItem1.Name = "layoutControlItem1";
-            layoutControlItem1.Size = new Size(342, 24);
+            layoutControlItem1.Size = new Size(544, 24);
             layoutControlItem1.Text = "Cari Grubu :";
             layoutControlItem1.TextSize = new Size(89, 13);
             // 
@@ -501,7 +532,7 @@
             layoutControlItem2.Control = comboBoxtur;
             layoutControlItem2.Location = new Point(0, 24);
             layoutControlItem2.Name = "layoutControlItem2";
-            layoutControlItem2.Size = new Size(342, 24);
+            layoutControlItem2.Size = new Size(544, 24);
             layoutControlItem2.Text = "Cari Türü :";
             layoutControlItem2.TextSize = new Size(89, 13);
             // 
@@ -510,7 +541,7 @@
             layoutControlItem4.Control = textcarikod;
             layoutControlItem4.Location = new Point(0, 48);
             layoutControlItem4.Name = "layoutControlItem4";
-            layoutControlItem4.Size = new Size(342, 24);
+            layoutControlItem4.Size = new Size(544, 24);
             layoutControlItem4.Text = "Cari Kodu :";
             layoutControlItem4.TextSize = new Size(89, 13);
             // 
@@ -519,7 +550,7 @@
             layoutControlItem5.Control = textcariunvan;
             layoutControlItem5.Location = new Point(0, 72);
             layoutControlItem5.Name = "layoutControlItem5";
-            layoutControlItem5.Size = new Size(342, 24);
+            layoutControlItem5.Size = new Size(544, 24);
             layoutControlItem5.Text = "Cari Unvan :";
             layoutControlItem5.TextSize = new Size(89, 13);
             // 
@@ -528,7 +559,7 @@
             layoutControlItem7.Control = gridLookUpulke;
             layoutControlItem7.Location = new Point(0, 120);
             layoutControlItem7.Name = "layoutControlItem7";
-            layoutControlItem7.Size = new Size(342, 24);
+            layoutControlItem7.Size = new Size(544, 24);
             layoutControlItem7.Text = "Ülke :";
             layoutControlItem7.TextSize = new Size(89, 13);
             // 
@@ -537,7 +568,7 @@
             layoutControlItem8.Control = gridLookUpsehir;
             layoutControlItem8.Location = new Point(0, 144);
             layoutControlItem8.Name = "layoutControlItem8";
-            layoutControlItem8.Size = new Size(342, 24);
+            layoutControlItem8.Size = new Size(544, 24);
             layoutControlItem8.Text = "Şehir :";
             layoutControlItem8.TextSize = new Size(89, 13);
             // 
@@ -546,7 +577,7 @@
             layoutControlItem9.Control = gridLookUpilce;
             layoutControlItem9.Location = new Point(0, 168);
             layoutControlItem9.Name = "layoutControlItem9";
-            layoutControlItem9.Size = new Size(342, 24);
+            layoutControlItem9.Size = new Size(544, 24);
             layoutControlItem9.Text = "İlçe :";
             layoutControlItem9.TextSize = new Size(89, 13);
             // 
@@ -555,7 +586,7 @@
             layoutControlItem10.Control = textpostakod;
             layoutControlItem10.Location = new Point(0, 192);
             layoutControlItem10.Name = "layoutControlItem10";
-            layoutControlItem10.Size = new Size(342, 24);
+            layoutControlItem10.Size = new Size(544, 24);
             layoutControlItem10.Text = "Posta Kodu :";
             layoutControlItem10.TextSize = new Size(89, 13);
             // 
@@ -564,7 +595,7 @@
             layoutControlItem11.Control = textadres;
             layoutControlItem11.Location = new Point(0, 216);
             layoutControlItem11.Name = "layoutControlItem11";
-            layoutControlItem11.Size = new Size(342, 24);
+            layoutControlItem11.Size = new Size(544, 24);
             layoutControlItem11.Text = "Adres :";
             layoutControlItem11.TextSize = new Size(89, 13);
             // 
@@ -573,7 +604,7 @@
             layoutControlItem12.Control = textsabitno;
             layoutControlItem12.Location = new Point(0, 240);
             layoutControlItem12.Name = "layoutControlItem12";
-            layoutControlItem12.Size = new Size(342, 24);
+            layoutControlItem12.Size = new Size(544, 24);
             layoutControlItem12.Text = "Sabit No :";
             layoutControlItem12.TextSize = new Size(89, 13);
             // 
@@ -582,7 +613,7 @@
             layoutControlItem13.Control = textfax;
             layoutControlItem13.Location = new Point(0, 288);
             layoutControlItem13.Name = "layoutControlItem13";
-            layoutControlItem13.Size = new Size(342, 24);
+            layoutControlItem13.Size = new Size(544, 24);
             layoutControlItem13.Text = "Fax :";
             layoutControlItem13.TextSize = new Size(89, 13);
             // 
@@ -591,7 +622,7 @@
             layoutControlItem15.Control = textEposta;
             layoutControlItem15.Location = new Point(0, 312);
             layoutControlItem15.Name = "layoutControlItem15";
-            layoutControlItem15.Size = new Size(342, 24);
+            layoutControlItem15.Size = new Size(544, 24);
             layoutControlItem15.Text = "E-Posta :";
             layoutControlItem15.TextSize = new Size(89, 13);
             // 
@@ -600,7 +631,7 @@
             layoutControlItem16.Control = texturl;
             layoutControlItem16.Location = new Point(0, 336);
             layoutControlItem16.Name = "layoutControlItem16";
-            layoutControlItem16.Size = new Size(342, 24);
+            layoutControlItem16.Size = new Size(544, 24);
             layoutControlItem16.Text = "URL :";
             layoutControlItem16.TextSize = new Size(89, 13);
             // 
@@ -609,7 +640,7 @@
             layoutControlItem17.Control = textvergidaire;
             layoutControlItem17.Location = new Point(0, 360);
             layoutControlItem17.Name = "layoutControlItem17";
-            layoutControlItem17.Size = new Size(342, 24);
+            layoutControlItem17.Size = new Size(544, 24);
             layoutControlItem17.Text = "Vergi Dairesi :";
             layoutControlItem17.TextSize = new Size(89, 13);
             // 
@@ -618,7 +649,7 @@
             layoutControlItem18.Control = textvergino;
             layoutControlItem18.Location = new Point(0, 384);
             layoutControlItem18.Name = "layoutControlItem18";
-            layoutControlItem18.Size = new Size(342, 24);
+            layoutControlItem18.Size = new Size(544, 24);
             layoutControlItem18.Text = "Vergi No :";
             layoutControlItem18.TextSize = new Size(89, 13);
             // 
@@ -627,7 +658,7 @@
             layoutControlItem19.Control = textadsoyad;
             layoutControlItem19.Location = new Point(0, 408);
             layoutControlItem19.Name = "layoutControlItem19";
-            layoutControlItem19.Size = new Size(342, 24);
+            layoutControlItem19.Size = new Size(544, 24);
             layoutControlItem19.Text = "Yetkili AdI Soyadı :";
             layoutControlItem19.TextSize = new Size(89, 13);
             // 
@@ -636,7 +667,7 @@
             layoutControlItem20.Control = simpleButton1;
             layoutControlItem20.Location = new Point(0, 432);
             layoutControlItem20.Name = "layoutControlItem20";
-            layoutControlItem20.Size = new Size(342, 66);
+            layoutControlItem20.Size = new Size(544, 40);
             layoutControlItem20.TextSize = new Size(0, 0);
             layoutControlItem20.TextVisible = false;
             // 
@@ -645,7 +676,7 @@
             layoutControlItem3.Control = texttabela;
             layoutControlItem3.Location = new Point(0, 96);
             layoutControlItem3.Name = "layoutControlItem3";
-            layoutControlItem3.Size = new Size(342, 24);
+            layoutControlItem3.Size = new Size(544, 24);
             layoutControlItem3.Text = "Tabela Adı :";
             layoutControlItem3.TextSize = new Size(89, 13);
             // 
@@ -654,7 +685,7 @@
             layoutControlItem14.Control = textgsm;
             layoutControlItem14.Location = new Point(0, 264);
             layoutControlItem14.Name = "layoutControlItem14";
-            layoutControlItem14.Size = new Size(342, 24);
+            layoutControlItem14.Size = new Size(544, 24);
             layoutControlItem14.Text = "GSM :";
             layoutControlItem14.TextSize = new Size(89, 13);
             // 
@@ -662,19 +693,20 @@
             // 
             AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(362, 562);
+            ClientSize = new Size(564, 536);
             Controls.Add(layoutControl1);
             Controls.Add(barDockControlLeft);
             Controls.Add(barDockControlRight);
             Controls.Add(barDockControlBottom);
             Controls.Add(barDockControlTop);
             Name = "XtraCariEkle";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Cari Ekleme Formu";
             Load += XtraCariEkle_Load;
             ((System.ComponentModel.ISupportInitialize)layoutControl1).EndInit();
             layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)barManager1).EndInit();
             ((System.ComponentModel.ISupportInitialize)textadsoyad.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barManager1).EndInit();
             ((System.ComponentModel.ISupportInitialize)textvergino.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)textvergidaire.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)texturl.Properties).EndInit();
@@ -774,5 +806,8 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem20;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
     }
 }
