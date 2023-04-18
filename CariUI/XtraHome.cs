@@ -1,5 +1,7 @@
 ﻿using Business.Abstract;
 using DevExpress.XtraEditors;
+using Entities.Concrete;
+using Microsoft.Identity.Client;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +17,7 @@ namespace CariUI
     public partial class XtraHome : DevExpress.XtraEditors.XtraForm
     {
         private readonly IGrubService _grubService;
+       
         public XtraHome(IGrubService grubService)
         {
             InitializeComponent();
@@ -33,6 +36,8 @@ namespace CariUI
             Grubcs.Show();
         }
 
+       
+
         private void XtraHome_Load(object sender, EventArgs e)
         {
 
@@ -41,7 +46,7 @@ namespace CariUI
         private void btnCariEkleme_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             XtraCariEkle cariEkle;
-            cariEkle = new XtraCariEkle();
+            cariEkle = new XtraCariEkle(_grubService);
             cariEkle.Show();
         }
     }

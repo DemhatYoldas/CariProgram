@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XtraCariEkle));
             layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            textEdit14 = new DevExpress.XtraEditors.TextEdit();
+            textadsoyad = new DevExpress.XtraEditors.TextEdit();
             barManager1 = new DevExpress.XtraBars.BarManager(components);
             bar2 = new DevExpress.XtraBars.Bar();
             barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
@@ -43,30 +43,29 @@
             barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            textEdit13 = new DevExpress.XtraEditors.TextEdit();
-            textEdit12 = new DevExpress.XtraEditors.TextEdit();
-            textEdit11 = new DevExpress.XtraEditors.TextEdit();
-            textEdit10 = new DevExpress.XtraEditors.TextEdit();
-            textEdit9 = new DevExpress.XtraEditors.TextEdit();
-            textEdit8 = new DevExpress.XtraEditors.TextEdit();
-            textEdit7 = new DevExpress.XtraEditors.TextEdit();
-            textEdit6 = new DevExpress.XtraEditors.TextEdit();
-            textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            gridLookUpEdit3 = new DevExpress.XtraEditors.GridLookUpEdit();
+            textvergino = new DevExpress.XtraEditors.TextEdit();
+            textvergidaire = new DevExpress.XtraEditors.TextEdit();
+            texturl = new DevExpress.XtraEditors.TextEdit();
+            textEposta = new DevExpress.XtraEditors.TextEdit();
+            textgsm = new DevExpress.XtraEditors.TextEdit();
+            textfax = new DevExpress.XtraEditors.TextEdit();
+            textsabitno = new DevExpress.XtraEditors.TextEdit();
+            textadres = new DevExpress.XtraEditors.TextEdit();
+            textpostakod = new DevExpress.XtraEditors.TextEdit();
+            gridLookUpilce = new DevExpress.XtraEditors.GridLookUpEdit();
             gridLookUpEdit3View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            gridLookUpEdit2 = new DevExpress.XtraEditors.GridLookUpEdit();
+            gridLookUpsehir = new DevExpress.XtraEditors.GridLookUpEdit();
             gridLookUpEdit2View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            gridLookUpEdit1 = new DevExpress.XtraEditors.GridLookUpEdit();
+            gridLookUpulke = new DevExpress.XtraEditors.GridLookUpEdit();
             gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            comboBoxEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
-            comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
+            textcariunvan = new DevExpress.XtraEditors.TextEdit();
+            textcarikod = new DevExpress.XtraEditors.TextEdit();
+            texttabela = new DevExpress.XtraEditors.TextEdit();
+            comboBoxtur = new DevExpress.XtraEditors.ComboBoxEdit();
+            comboBoxgrub = new DevExpress.XtraEditors.ComboBoxEdit();
             Root = new DevExpress.XtraLayout.LayoutControlGroup();
             layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -76,41 +75,41 @@
             layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
-            layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem18 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem19 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
+            layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)layoutControl1).BeginInit();
             layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit14.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)textadsoyad.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)barManager1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit13.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit12.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit11.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit10.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit9.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit8.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit7.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit6.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit5.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)gridLookUpEdit3.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)textvergino.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)textvergidaire.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)texturl.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)textEposta.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)textgsm.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)textfax.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)textsabitno.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)textadres.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)textpostakod.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gridLookUpilce.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)gridLookUpEdit3View).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)gridLookUpEdit2.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gridLookUpsehir.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)gridLookUpEdit2View).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)gridLookUpEdit1.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gridLookUpulke.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)gridLookUpEdit1View).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit3.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit2.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit1.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)comboBoxEdit2.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)comboBoxEdit1.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)textcariunvan.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)textcarikod.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)texttabela.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)comboBoxtur.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)comboBoxgrub.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Root).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem7).BeginInit();
@@ -120,36 +119,37 @@
             ((System.ComponentModel.ISupportInitialize)layoutControlItem11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem13).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem14).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem15).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem16).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem17).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem18).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem19).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem20).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)layoutControlItem3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)layoutControlItem14).BeginInit();
             SuspendLayout();
             // 
             // layoutControl1
             // 
             layoutControl1.Controls.Add(simpleButton1);
-            layoutControl1.Controls.Add(textEdit14);
-            layoutControl1.Controls.Add(textEdit13);
-            layoutControl1.Controls.Add(textEdit12);
-            layoutControl1.Controls.Add(textEdit11);
-            layoutControl1.Controls.Add(textEdit10);
-            layoutControl1.Controls.Add(textEdit9);
-            layoutControl1.Controls.Add(textEdit8);
-            layoutControl1.Controls.Add(textEdit7);
-            layoutControl1.Controls.Add(textEdit6);
-            layoutControl1.Controls.Add(textEdit5);
-            layoutControl1.Controls.Add(gridLookUpEdit3);
-            layoutControl1.Controls.Add(gridLookUpEdit2);
-            layoutControl1.Controls.Add(gridLookUpEdit1);
-            layoutControl1.Controls.Add(textEdit3);
-            layoutControl1.Controls.Add(textEdit2);
-            layoutControl1.Controls.Add(textEdit1);
-            layoutControl1.Controls.Add(comboBoxEdit2);
-            layoutControl1.Controls.Add(comboBoxEdit1);
+            layoutControl1.Controls.Add(textadsoyad);
+            layoutControl1.Controls.Add(textvergino);
+            layoutControl1.Controls.Add(textvergidaire);
+            layoutControl1.Controls.Add(texturl);
+            layoutControl1.Controls.Add(textEposta);
+            layoutControl1.Controls.Add(textgsm);
+            layoutControl1.Controls.Add(textfax);
+            layoutControl1.Controls.Add(textsabitno);
+            layoutControl1.Controls.Add(textadres);
+            layoutControl1.Controls.Add(textpostakod);
+            layoutControl1.Controls.Add(gridLookUpilce);
+            layoutControl1.Controls.Add(gridLookUpsehir);
+            layoutControl1.Controls.Add(gridLookUpulke);
+            layoutControl1.Controls.Add(textcariunvan);
+            layoutControl1.Controls.Add(textcarikod);
+            layoutControl1.Controls.Add(texttabela);
+            layoutControl1.Controls.Add(comboBoxtur);
+            layoutControl1.Controls.Add(comboBoxgrub);
             layoutControl1.Dock = DockStyle.Fill;
             layoutControl1.Location = new Point(0, 24);
             layoutControl1.Name = "layoutControl1";
@@ -168,14 +168,14 @@
             simpleButton1.TabIndex = 19;
             simpleButton1.Text = "Cari Bilgileri Kaydet";
             // 
-            // textEdit14
+            // textadsoyad
             // 
-            textEdit14.Location = new Point(113, 420);
-            textEdit14.MenuManager = barManager1;
-            textEdit14.Name = "textEdit14";
-            textEdit14.Size = new Size(249, 20);
-            textEdit14.StyleController = layoutControl1;
-            textEdit14.TabIndex = 18;
+            textadsoyad.Location = new Point(113, 420);
+            textadsoyad.MenuManager = barManager1;
+            textadsoyad.Name = "textadsoyad";
+            textadsoyad.Size = new Size(249, 20);
+            textadsoyad.StyleController = layoutControl1;
+            textadsoyad.TabIndex = 18;
             // 
             // barManager1
             // 
@@ -209,6 +209,7 @@
             barButtonItem1.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem1.ImageOptions.LargeImage");
             barButtonItem1.Name = "barButtonItem1";
             barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            barButtonItem1.ItemClick += barButtonItem1_ItemClick;
             // 
             // barButtonItem2
             // 
@@ -218,6 +219,7 @@
             barButtonItem2.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem2.ImageOptions.LargeImage");
             barButtonItem2.Name = "barButtonItem2";
             barButtonItem2.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            barButtonItem2.ItemClick += barButtonItem2_ItemClick;
             // 
             // barButtonItem3
             // 
@@ -272,114 +274,114 @@
             barDockControlRight.Manager = barManager1;
             barDockControlRight.Size = new Size(0, 518);
             // 
-            // textEdit13
+            // textvergino
             // 
-            textEdit13.Location = new Point(113, 396);
-            textEdit13.MenuManager = barManager1;
-            textEdit13.Name = "textEdit13";
-            textEdit13.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            textEdit13.Properties.MaskSettings.Set("MaskManagerSignature", "isOptimistic=False");
-            textEdit13.Properties.MaskSettings.Set("mask", "\\d\\d\\d\\d\\d");
-            textEdit13.Size = new Size(249, 20);
-            textEdit13.StyleController = layoutControl1;
-            textEdit13.TabIndex = 17;
+            textvergino.Location = new Point(113, 396);
+            textvergino.MenuManager = barManager1;
+            textvergino.Name = "textvergino";
+            textvergino.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
+            textvergino.Properties.MaskSettings.Set("MaskManagerSignature", "isOptimistic=False");
+            textvergino.Properties.MaskSettings.Set("mask", "\\d\\d\\d\\d\\d");
+            textvergino.Size = new Size(249, 20);
+            textvergino.StyleController = layoutControl1;
+            textvergino.TabIndex = 17;
             // 
-            // textEdit12
+            // textvergidaire
             // 
-            textEdit12.Location = new Point(113, 372);
-            textEdit12.MenuManager = barManager1;
-            textEdit12.Name = "textEdit12";
-            textEdit12.Size = new Size(249, 20);
-            textEdit12.StyleController = layoutControl1;
-            textEdit12.TabIndex = 16;
+            textvergidaire.Location = new Point(113, 372);
+            textvergidaire.MenuManager = barManager1;
+            textvergidaire.Name = "textvergidaire";
+            textvergidaire.Size = new Size(249, 20);
+            textvergidaire.StyleController = layoutControl1;
+            textvergidaire.TabIndex = 16;
             // 
-            // textEdit11
+            // texturl
             // 
-            textEdit11.Location = new Point(113, 348);
-            textEdit11.MenuManager = barManager1;
-            textEdit11.Name = "textEdit11";
-            textEdit11.Size = new Size(249, 20);
-            textEdit11.StyleController = layoutControl1;
-            textEdit11.TabIndex = 15;
+            texturl.Location = new Point(113, 348);
+            texturl.MenuManager = barManager1;
+            texturl.Name = "texturl";
+            texturl.Size = new Size(249, 20);
+            texturl.StyleController = layoutControl1;
+            texturl.TabIndex = 15;
             // 
-            // textEdit10
+            // textEposta
             // 
-            textEdit10.Location = new Point(113, 324);
-            textEdit10.MenuManager = barManager1;
-            textEdit10.Name = "textEdit10";
-            textEdit10.Size = new Size(249, 20);
-            textEdit10.StyleController = layoutControl1;
-            textEdit10.TabIndex = 14;
+            textEposta.Location = new Point(113, 324);
+            textEposta.MenuManager = barManager1;
+            textEposta.Name = "textEposta";
+            textEposta.Size = new Size(249, 20);
+            textEposta.StyleController = layoutControl1;
+            textEposta.TabIndex = 14;
             // 
-            // textEdit9
+            // textgsm
             // 
-            textEdit9.Location = new Point(113, 276);
-            textEdit9.MenuManager = barManager1;
-            textEdit9.Name = "textEdit9";
-            textEdit9.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
-            textEdit9.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
-            textEdit9.Properties.MaskSettings.Set("mask", "(000) 000-0000");
-            textEdit9.Size = new Size(249, 20);
-            textEdit9.StyleController = layoutControl1;
-            textEdit9.TabIndex = 13;
+            textgsm.Location = new Point(113, 276);
+            textgsm.MenuManager = barManager1;
+            textgsm.Name = "textgsm";
+            textgsm.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
+            textgsm.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
+            textgsm.Properties.MaskSettings.Set("mask", "(000) 000-0000");
+            textgsm.Size = new Size(249, 20);
+            textgsm.StyleController = layoutControl1;
+            textgsm.TabIndex = 13;
             // 
-            // textEdit8
+            // textfax
             // 
-            textEdit8.Location = new Point(113, 300);
-            textEdit8.MenuManager = barManager1;
-            textEdit8.Name = "textEdit8";
-            textEdit8.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            textEdit8.Properties.MaskSettings.Set("MaskManagerSignature", "isOptimistic=False");
-            textEdit8.Properties.MaskSettings.Set("mask", "\\d\\d\\d\\d\\d");
-            textEdit8.Size = new Size(249, 20);
-            textEdit8.StyleController = layoutControl1;
-            textEdit8.TabIndex = 12;
+            textfax.Location = new Point(113, 300);
+            textfax.MenuManager = barManager1;
+            textfax.Name = "textfax";
+            textfax.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
+            textfax.Properties.MaskSettings.Set("MaskManagerSignature", "isOptimistic=False");
+            textfax.Properties.MaskSettings.Set("mask", "\\d\\d\\d\\d\\d");
+            textfax.Size = new Size(249, 20);
+            textfax.StyleController = layoutControl1;
+            textfax.TabIndex = 12;
             // 
-            // textEdit7
+            // textsabitno
             // 
-            textEdit7.Location = new Point(113, 252);
-            textEdit7.MenuManager = barManager1;
-            textEdit7.Name = "textEdit7";
-            textEdit7.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            textEdit7.Properties.MaskSettings.Set("MaskManagerSignature", "isOptimistic=False");
-            textEdit7.Properties.MaskSettings.Set("mask", "(\\d\\d\\d) \\d\\d\\d-\\d\\d\\d\\d");
-            textEdit7.Properties.MaskSettings.Set("culture", "tr");
-            textEdit7.Properties.MaskSettings.Set("placeholder", '9');
-            textEdit7.Size = new Size(249, 20);
-            textEdit7.StyleController = layoutControl1;
-            textEdit7.TabIndex = 11;
+            textsabitno.Location = new Point(113, 252);
+            textsabitno.MenuManager = barManager1;
+            textsabitno.Name = "textsabitno";
+            textsabitno.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
+            textsabitno.Properties.MaskSettings.Set("MaskManagerSignature", "isOptimistic=False");
+            textsabitno.Properties.MaskSettings.Set("mask", "(\\d\\d\\d) \\d\\d\\d-\\d\\d\\d\\d");
+            textsabitno.Properties.MaskSettings.Set("culture", "tr");
+            textsabitno.Properties.MaskSettings.Set("placeholder", '9');
+            textsabitno.Size = new Size(249, 20);
+            textsabitno.StyleController = layoutControl1;
+            textsabitno.TabIndex = 11;
             // 
-            // textEdit6
+            // textadres
             // 
-            textEdit6.Location = new Point(113, 228);
-            textEdit6.MenuManager = barManager1;
-            textEdit6.Name = "textEdit6";
-            textEdit6.Size = new Size(249, 20);
-            textEdit6.StyleController = layoutControl1;
-            textEdit6.TabIndex = 10;
+            textadres.Location = new Point(113, 228);
+            textadres.MenuManager = barManager1;
+            textadres.Name = "textadres";
+            textadres.Size = new Size(249, 20);
+            textadres.StyleController = layoutControl1;
+            textadres.TabIndex = 10;
             // 
-            // textEdit5
+            // textpostakod
             // 
-            textEdit5.Location = new Point(113, 204);
-            textEdit5.MenuManager = barManager1;
-            textEdit5.Name = "textEdit5";
-            textEdit5.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
-            textEdit5.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
-            textEdit5.Properties.MaskSettings.Set("mask", "00000");
-            textEdit5.Size = new Size(249, 20);
-            textEdit5.StyleController = layoutControl1;
-            textEdit5.TabIndex = 9;
+            textpostakod.Location = new Point(113, 204);
+            textpostakod.MenuManager = barManager1;
+            textpostakod.Name = "textpostakod";
+            textpostakod.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
+            textpostakod.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
+            textpostakod.Properties.MaskSettings.Set("mask", "00000");
+            textpostakod.Size = new Size(249, 20);
+            textpostakod.StyleController = layoutControl1;
+            textpostakod.TabIndex = 9;
             // 
-            // gridLookUpEdit3
+            // gridLookUpilce
             // 
-            gridLookUpEdit3.Location = new Point(113, 180);
-            gridLookUpEdit3.MenuManager = barManager1;
-            gridLookUpEdit3.Name = "gridLookUpEdit3";
-            gridLookUpEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
-            gridLookUpEdit3.Properties.PopupView = gridLookUpEdit3View;
-            gridLookUpEdit3.Size = new Size(249, 20);
-            gridLookUpEdit3.StyleController = layoutControl1;
-            gridLookUpEdit3.TabIndex = 8;
+            gridLookUpilce.Location = new Point(113, 180);
+            gridLookUpilce.MenuManager = barManager1;
+            gridLookUpilce.Name = "gridLookUpilce";
+            gridLookUpilce.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
+            gridLookUpilce.Properties.PopupView = gridLookUpEdit3View;
+            gridLookUpilce.Size = new Size(249, 20);
+            gridLookUpilce.StyleController = layoutControl1;
+            gridLookUpilce.TabIndex = 8;
             // 
             // gridLookUpEdit3View
             // 
@@ -388,16 +390,16 @@
             gridLookUpEdit3View.OptionsSelection.EnableAppearanceFocusedCell = false;
             gridLookUpEdit3View.OptionsView.ShowGroupPanel = false;
             // 
-            // gridLookUpEdit2
+            // gridLookUpsehir
             // 
-            gridLookUpEdit2.Location = new Point(113, 156);
-            gridLookUpEdit2.MenuManager = barManager1;
-            gridLookUpEdit2.Name = "gridLookUpEdit2";
-            gridLookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
-            gridLookUpEdit2.Properties.PopupView = gridLookUpEdit2View;
-            gridLookUpEdit2.Size = new Size(249, 20);
-            gridLookUpEdit2.StyleController = layoutControl1;
-            gridLookUpEdit2.TabIndex = 7;
+            gridLookUpsehir.Location = new Point(113, 156);
+            gridLookUpsehir.MenuManager = barManager1;
+            gridLookUpsehir.Name = "gridLookUpsehir";
+            gridLookUpsehir.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
+            gridLookUpsehir.Properties.PopupView = gridLookUpEdit2View;
+            gridLookUpsehir.Size = new Size(249, 20);
+            gridLookUpsehir.StyleController = layoutControl1;
+            gridLookUpsehir.TabIndex = 7;
             // 
             // gridLookUpEdit2View
             // 
@@ -406,16 +408,16 @@
             gridLookUpEdit2View.OptionsSelection.EnableAppearanceFocusedCell = false;
             gridLookUpEdit2View.OptionsView.ShowGroupPanel = false;
             // 
-            // gridLookUpEdit1
+            // gridLookUpulke
             // 
-            gridLookUpEdit1.Location = new Point(113, 132);
-            gridLookUpEdit1.MenuManager = barManager1;
-            gridLookUpEdit1.Name = "gridLookUpEdit1";
-            gridLookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
-            gridLookUpEdit1.Properties.PopupView = gridLookUpEdit1View;
-            gridLookUpEdit1.Size = new Size(249, 20);
-            gridLookUpEdit1.StyleController = layoutControl1;
-            gridLookUpEdit1.TabIndex = 6;
+            gridLookUpulke.Location = new Point(113, 132);
+            gridLookUpulke.MenuManager = barManager1;
+            gridLookUpulke.Name = "gridLookUpulke";
+            gridLookUpulke.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
+            gridLookUpulke.Properties.PopupView = gridLookUpEdit1View;
+            gridLookUpulke.Size = new Size(249, 20);
+            gridLookUpulke.StyleController = layoutControl1;
+            gridLookUpulke.TabIndex = 6;
             // 
             // gridLookUpEdit1View
             // 
@@ -424,55 +426,57 @@
             gridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
             gridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
             // 
-            // textEdit3
+            // textcariunvan
             // 
-            textEdit3.Location = new Point(113, 84);
-            textEdit3.MenuManager = barManager1;
-            textEdit3.Name = "textEdit3";
-            textEdit3.Size = new Size(249, 20);
-            textEdit3.StyleController = layoutControl1;
-            textEdit3.TabIndex = 4;
+            textcariunvan.Location = new Point(113, 84);
+            textcariunvan.MenuManager = barManager1;
+            textcariunvan.Name = "textcariunvan";
+            textcariunvan.Size = new Size(249, 20);
+            textcariunvan.StyleController = layoutControl1;
+            textcariunvan.TabIndex = 4;
             // 
-            // textEdit2
+            // textcarikod
             // 
-            textEdit2.Location = new Point(113, 60);
-            textEdit2.MenuManager = barManager1;
-            textEdit2.Name = "textEdit2";
-            textEdit2.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
-            textEdit2.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
-            textEdit2.Properties.MaskSettings.Set("mask", "00000");
-            textEdit2.Size = new Size(249, 20);
-            textEdit2.StyleController = layoutControl1;
-            textEdit2.TabIndex = 3;
+            textcarikod.Location = new Point(113, 60);
+            textcarikod.MenuManager = barManager1;
+            textcarikod.Name = "textcarikod";
+            textcarikod.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
+            textcarikod.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
+            textcarikod.Properties.MaskSettings.Set("mask", "00000");
+            textcarikod.Size = new Size(249, 20);
+            textcarikod.StyleController = layoutControl1;
+            textcarikod.TabIndex = 3;
             // 
-            // textEdit1
+            // texttabela
             // 
-            textEdit1.Location = new Point(113, 108);
-            textEdit1.MenuManager = barManager1;
-            textEdit1.Name = "textEdit1";
-            textEdit1.Size = new Size(249, 20);
-            textEdit1.StyleController = layoutControl1;
-            textEdit1.TabIndex = 5;
+            texttabela.Location = new Point(113, 108);
+            texttabela.MenuManager = barManager1;
+            texttabela.Name = "texttabela";
+            texttabela.Size = new Size(249, 20);
+            texttabela.StyleController = layoutControl1;
+            texttabela.TabIndex = 5;
             // 
-            // comboBoxEdit2
+            // comboBoxtur
             // 
-            comboBoxEdit2.Location = new Point(113, 36);
-            comboBoxEdit2.MenuManager = barManager1;
-            comboBoxEdit2.Name = "comboBoxEdit2";
-            comboBoxEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
-            comboBoxEdit2.Size = new Size(249, 20);
-            comboBoxEdit2.StyleController = layoutControl1;
-            comboBoxEdit2.TabIndex = 2;
+            comboBoxtur.Location = new Point(113, 36);
+            comboBoxtur.MenuManager = barManager1;
+            comboBoxtur.Name = "comboBoxtur";
+            comboBoxtur.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
+            comboBoxtur.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            comboBoxtur.Size = new Size(249, 20);
+            comboBoxtur.StyleController = layoutControl1;
+            comboBoxtur.TabIndex = 2;
             // 
-            // comboBoxEdit1
+            // comboBoxgrub
             // 
-            comboBoxEdit1.Location = new Point(113, 12);
-            comboBoxEdit1.MenuManager = barManager1;
-            comboBoxEdit1.Name = "comboBoxEdit1";
-            comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
-            comboBoxEdit1.Size = new Size(249, 20);
-            comboBoxEdit1.StyleController = layoutControl1;
-            comboBoxEdit1.TabIndex = 0;
+            comboBoxgrub.Location = new Point(113, 12);
+            comboBoxgrub.MenuManager = barManager1;
+            comboBoxgrub.Name = "comboBoxgrub";
+            comboBoxgrub.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
+            comboBoxgrub.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            comboBoxgrub.Size = new Size(249, 20);
+            comboBoxgrub.StyleController = layoutControl1;
+            comboBoxgrub.TabIndex = 0;
             // 
             // Root
             // 
@@ -485,7 +489,7 @@
             // 
             // layoutControlItem1
             // 
-            layoutControlItem1.Control = comboBoxEdit1;
+            layoutControlItem1.Control = comboBoxgrub;
             layoutControlItem1.Location = new Point(0, 0);
             layoutControlItem1.Name = "layoutControlItem1";
             layoutControlItem1.Size = new Size(354, 24);
@@ -494,25 +498,16 @@
             // 
             // layoutControlItem2
             // 
-            layoutControlItem2.Control = comboBoxEdit2;
+            layoutControlItem2.Control = comboBoxtur;
             layoutControlItem2.Location = new Point(0, 24);
             layoutControlItem2.Name = "layoutControlItem2";
             layoutControlItem2.Size = new Size(354, 24);
             layoutControlItem2.Text = "Cari Türü :";
             layoutControlItem2.TextSize = new Size(89, 13);
             // 
-            // layoutControlItem3
-            // 
-            layoutControlItem3.Control = textEdit1;
-            layoutControlItem3.Location = new Point(0, 96);
-            layoutControlItem3.Name = "layoutControlItem3";
-            layoutControlItem3.Size = new Size(354, 24);
-            layoutControlItem3.Text = "Tabela Adı :";
-            layoutControlItem3.TextSize = new Size(89, 13);
-            // 
             // layoutControlItem4
             // 
-            layoutControlItem4.Control = textEdit2;
+            layoutControlItem4.Control = textcarikod;
             layoutControlItem4.Location = new Point(0, 48);
             layoutControlItem4.Name = "layoutControlItem4";
             layoutControlItem4.Size = new Size(354, 24);
@@ -521,7 +516,7 @@
             // 
             // layoutControlItem5
             // 
-            layoutControlItem5.Control = textEdit3;
+            layoutControlItem5.Control = textcariunvan;
             layoutControlItem5.Location = new Point(0, 72);
             layoutControlItem5.Name = "layoutControlItem5";
             layoutControlItem5.Size = new Size(354, 24);
@@ -530,7 +525,7 @@
             // 
             // layoutControlItem7
             // 
-            layoutControlItem7.Control = gridLookUpEdit1;
+            layoutControlItem7.Control = gridLookUpulke;
             layoutControlItem7.Location = new Point(0, 120);
             layoutControlItem7.Name = "layoutControlItem7";
             layoutControlItem7.Size = new Size(354, 24);
@@ -539,7 +534,7 @@
             // 
             // layoutControlItem8
             // 
-            layoutControlItem8.Control = gridLookUpEdit2;
+            layoutControlItem8.Control = gridLookUpsehir;
             layoutControlItem8.Location = new Point(0, 144);
             layoutControlItem8.Name = "layoutControlItem8";
             layoutControlItem8.Size = new Size(354, 24);
@@ -548,7 +543,7 @@
             // 
             // layoutControlItem9
             // 
-            layoutControlItem9.Control = gridLookUpEdit3;
+            layoutControlItem9.Control = gridLookUpilce;
             layoutControlItem9.Location = new Point(0, 168);
             layoutControlItem9.Name = "layoutControlItem9";
             layoutControlItem9.Size = new Size(354, 24);
@@ -557,7 +552,7 @@
             // 
             // layoutControlItem10
             // 
-            layoutControlItem10.Control = textEdit5;
+            layoutControlItem10.Control = textpostakod;
             layoutControlItem10.Location = new Point(0, 192);
             layoutControlItem10.Name = "layoutControlItem10";
             layoutControlItem10.Size = new Size(354, 24);
@@ -566,7 +561,7 @@
             // 
             // layoutControlItem11
             // 
-            layoutControlItem11.Control = textEdit6;
+            layoutControlItem11.Control = textadres;
             layoutControlItem11.Location = new Point(0, 216);
             layoutControlItem11.Name = "layoutControlItem11";
             layoutControlItem11.Size = new Size(354, 24);
@@ -575,7 +570,7 @@
             // 
             // layoutControlItem12
             // 
-            layoutControlItem12.Control = textEdit7;
+            layoutControlItem12.Control = textsabitno;
             layoutControlItem12.Location = new Point(0, 240);
             layoutControlItem12.Name = "layoutControlItem12";
             layoutControlItem12.Size = new Size(354, 24);
@@ -584,25 +579,16 @@
             // 
             // layoutControlItem13
             // 
-            layoutControlItem13.Control = textEdit8;
+            layoutControlItem13.Control = textfax;
             layoutControlItem13.Location = new Point(0, 288);
             layoutControlItem13.Name = "layoutControlItem13";
             layoutControlItem13.Size = new Size(354, 24);
             layoutControlItem13.Text = "Fax :";
             layoutControlItem13.TextSize = new Size(89, 13);
             // 
-            // layoutControlItem14
-            // 
-            layoutControlItem14.Control = textEdit9;
-            layoutControlItem14.Location = new Point(0, 264);
-            layoutControlItem14.Name = "layoutControlItem14";
-            layoutControlItem14.Size = new Size(354, 24);
-            layoutControlItem14.Text = "GSM :";
-            layoutControlItem14.TextSize = new Size(89, 13);
-            // 
             // layoutControlItem15
             // 
-            layoutControlItem15.Control = textEdit10;
+            layoutControlItem15.Control = textEposta;
             layoutControlItem15.Location = new Point(0, 312);
             layoutControlItem15.Name = "layoutControlItem15";
             layoutControlItem15.Size = new Size(354, 24);
@@ -611,7 +597,7 @@
             // 
             // layoutControlItem16
             // 
-            layoutControlItem16.Control = textEdit11;
+            layoutControlItem16.Control = texturl;
             layoutControlItem16.Location = new Point(0, 336);
             layoutControlItem16.Name = "layoutControlItem16";
             layoutControlItem16.Size = new Size(354, 24);
@@ -620,7 +606,7 @@
             // 
             // layoutControlItem17
             // 
-            layoutControlItem17.Control = textEdit12;
+            layoutControlItem17.Control = textvergidaire;
             layoutControlItem17.Location = new Point(0, 360);
             layoutControlItem17.Name = "layoutControlItem17";
             layoutControlItem17.Size = new Size(354, 24);
@@ -629,7 +615,7 @@
             // 
             // layoutControlItem18
             // 
-            layoutControlItem18.Control = textEdit13;
+            layoutControlItem18.Control = textvergino;
             layoutControlItem18.Location = new Point(0, 384);
             layoutControlItem18.Name = "layoutControlItem18";
             layoutControlItem18.Size = new Size(354, 24);
@@ -638,7 +624,7 @@
             // 
             // layoutControlItem19
             // 
-            layoutControlItem19.Control = textEdit14;
+            layoutControlItem19.Control = textadsoyad;
             layoutControlItem19.Location = new Point(0, 408);
             layoutControlItem19.Name = "layoutControlItem19";
             layoutControlItem19.Size = new Size(354, 24);
@@ -654,6 +640,24 @@
             layoutControlItem20.TextSize = new Size(0, 0);
             layoutControlItem20.TextVisible = false;
             // 
+            // layoutControlItem3
+            // 
+            layoutControlItem3.Control = texttabela;
+            layoutControlItem3.Location = new Point(0, 96);
+            layoutControlItem3.Name = "layoutControlItem3";
+            layoutControlItem3.Size = new Size(354, 24);
+            layoutControlItem3.Text = "Tabela Adı :";
+            layoutControlItem3.TextSize = new Size(89, 13);
+            // 
+            // layoutControlItem14
+            // 
+            layoutControlItem14.Control = textgsm;
+            layoutControlItem14.Location = new Point(0, 264);
+            layoutControlItem14.Name = "layoutControlItem14";
+            layoutControlItem14.Size = new Size(354, 24);
+            layoutControlItem14.Text = "GSM :";
+            layoutControlItem14.TextSize = new Size(89, 13);
+            // 
             // XtraCariEkle
             // 
             AutoScaleDimensions = new SizeF(6F, 13F);
@@ -666,34 +670,34 @@
             Controls.Add(barDockControlTop);
             Name = "XtraCariEkle";
             Text = "Cari Ekleme Formu";
+            Load += XtraCariEkle_Load;
             ((System.ComponentModel.ISupportInitialize)layoutControl1).EndInit();
             layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)textEdit14.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)textadsoyad.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)barManager1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit13.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit12.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit11.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit10.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit9.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit8.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit7.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit6.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit5.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)gridLookUpEdit3.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)textvergino.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)textvergidaire.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)texturl.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)textEposta.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)textgsm.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)textfax.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)textsabitno.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)textadres.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)textpostakod.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gridLookUpilce.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)gridLookUpEdit3View).EndInit();
-            ((System.ComponentModel.ISupportInitialize)gridLookUpEdit2.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gridLookUpsehir.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)gridLookUpEdit2View).EndInit();
-            ((System.ComponentModel.ISupportInitialize)gridLookUpEdit1.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gridLookUpulke.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)gridLookUpEdit1View).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit3.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit2.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit1.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)comboBoxEdit2.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)comboBoxEdit1.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)textcariunvan.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)textcarikod.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)texttabela.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)comboBoxtur.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)comboBoxgrub.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)Root).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem1).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem3).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem4).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem5).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem7).EndInit();
@@ -703,13 +707,14 @@
             ((System.ComponentModel.ISupportInitialize)layoutControlItem11).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem12).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem13).EndInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem14).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem15).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem16).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem17).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem18).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem19).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem20).EndInit();
+            ((System.ComponentModel.ISupportInitialize)layoutControlItem3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)layoutControlItem14).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -718,7 +723,7 @@
 
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.TextEdit textEdit14;
+        private DevExpress.XtraEditors.TextEdit textadsoyad;
         private DevExpress.XtraBars.BarManager barManager1;
         private DevExpress.XtraBars.Bar bar2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
@@ -727,26 +732,26 @@
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
-        private DevExpress.XtraEditors.TextEdit textEdit13;
-        private DevExpress.XtraEditors.TextEdit textEdit12;
-        private DevExpress.XtraEditors.TextEdit textEdit11;
-        private DevExpress.XtraEditors.TextEdit textEdit10;
-        private DevExpress.XtraEditors.TextEdit textEdit9;
-        private DevExpress.XtraEditors.TextEdit textEdit8;
-        private DevExpress.XtraEditors.TextEdit textEdit7;
-        private DevExpress.XtraEditors.TextEdit textEdit6;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
-        private DevExpress.XtraEditors.GridLookUpEdit gridLookUpEdit3;
+        private DevExpress.XtraEditors.TextEdit textvergino;
+        private DevExpress.XtraEditors.TextEdit textvergidaire;
+        private DevExpress.XtraEditors.TextEdit texturl;
+        private DevExpress.XtraEditors.TextEdit textEposta;
+        private DevExpress.XtraEditors.TextEdit textgsm;
+        private DevExpress.XtraEditors.TextEdit textfax;
+        private DevExpress.XtraEditors.TextEdit textsabitno;
+        private DevExpress.XtraEditors.TextEdit textadres;
+        private DevExpress.XtraEditors.TextEdit textpostakod;
+        private DevExpress.XtraEditors.GridLookUpEdit gridLookUpilce;
         private DevExpress.XtraGrid.Views.Grid.GridView gridLookUpEdit3View;
-        private DevExpress.XtraEditors.GridLookUpEdit gridLookUpEdit2;
+        private DevExpress.XtraEditors.GridLookUpEdit gridLookUpsehir;
         private DevExpress.XtraGrid.Views.Grid.GridView gridLookUpEdit2View;
-        private DevExpress.XtraEditors.GridLookUpEdit gridLookUpEdit1;
+        private DevExpress.XtraEditors.GridLookUpEdit gridLookUpulke;
         private DevExpress.XtraGrid.Views.Grid.GridView gridLookUpEdit1View;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit2;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
+        private DevExpress.XtraEditors.TextEdit textcariunvan;
+        private DevExpress.XtraEditors.TextEdit textcarikod;
+        private DevExpress.XtraEditors.TextEdit texttabela;
+        private DevExpress.XtraEditors.ComboBoxEdit comboBoxtur;
+        private DevExpress.XtraEditors.ComboBoxEdit comboBoxgrub;
         private DevExpress.XtraLayout.LayoutControlGroup Root;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
