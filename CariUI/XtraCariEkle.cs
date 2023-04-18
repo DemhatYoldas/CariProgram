@@ -16,12 +16,14 @@ namespace CariUI
     {
         IGrubService _grubService;
         ITurServis _turService;
+        IUlkeServis _ulkeServis;
 
-        public XtraCariEkle(IGrubService grubService, ITurServis turService)
+        public XtraCariEkle(IGrubService grubService, ITurServis turService, IUlkeServis ulkeServis)
         {
             InitializeComponent();
             _grubService = grubService;
             _turService = turService;
+            _ulkeServis = ulkeServis;
         }
 
         private void XtraCariEkle_Load(object sender, EventArgs e)
@@ -49,6 +51,24 @@ namespace CariUI
         {
             XtraTurekle turek = new XtraTurekle(_grubService, _turService);
             turek.Show();
+        }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            XtraUlke ulke = new XtraUlke(_ulkeServis);
+            ulke.Show();
+        }
+
+        private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            XtraSehir xtraSehir = new XtraSehir();
+            xtraSehir.Show();
+        }
+
+        private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Xtraİlce xtraİlce=new Xtraİlce();
+            xtraİlce.Show();
         }
     }
 }

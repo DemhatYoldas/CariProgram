@@ -242,6 +242,7 @@
             barButtonItem3.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem3.ImageOptions.LargeImage");
             barButtonItem3.Name = "barButtonItem3";
             barButtonItem3.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            barButtonItem3.ItemClick += barButtonItem3_ItemClick;
             // 
             // barButtonItem5
             // 
@@ -251,6 +252,7 @@
             barButtonItem5.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem5.ImageOptions.LargeImage");
             barButtonItem5.Name = "barButtonItem5";
             barButtonItem5.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            barButtonItem5.ItemClick += barButtonItem5_ItemClick;
             // 
             // barButtonItem6
             // 
@@ -260,6 +262,7 @@
             barButtonItem6.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem6.ImageOptions.LargeImage");
             barButtonItem6.Name = "barButtonItem6";
             barButtonItem6.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            barButtonItem6.ItemClick += barButtonItem6_ItemClick;
             // 
             // bar3
             // 

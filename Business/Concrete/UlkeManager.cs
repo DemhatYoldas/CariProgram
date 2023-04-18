@@ -1,5 +1,8 @@
 ﻿using Business.Abstract;
+using Business.Validation.FluentValidation;
+using Core.CrossCuttingConcems.Validation;
 using DataAccess.Abstract;
+using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -21,8 +24,15 @@ namespace Business.Concrete
 
         public bool add(Ulke ulke)
         {
-            _ulkeDal.add(ulke);
-            return true;
+            bool validation = ValidationTool.Validate(new UlkeValidator(), ulke);
+            if (validation)
+            {
+                _ulkeDal.add(ulke);
+                MessageBox.Show("ulke Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return true;
+
+            }
+            return false;
         }
     }
 }

@@ -18,12 +18,14 @@ namespace CariUI
     {
         private readonly IGrubService _grubService;
         private readonly ITurServis _turService;
+        private readonly IUlkeServis _ulkeServis;
        
-        public XtraHome(IGrubService grubService, ITurServis turService)
+        public XtraHome(IGrubService grubService, ITurServis turService, IUlkeServis ulkeServis)
         {
             InitializeComponent();
             _grubService = grubService;
             _turService = turService;
+            _ulkeServis = ulkeServis;
         }
 
         private void btnclose_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -48,7 +50,7 @@ namespace CariUI
         private void btnCariEkleme_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             XtraCariEkle cariEkle;
-            cariEkle = new XtraCariEkle(_grubService,_turService);
+            cariEkle = new XtraCariEkle(_grubService,_turService,_ulkeServis);
             cariEkle.Show();
         }
     }

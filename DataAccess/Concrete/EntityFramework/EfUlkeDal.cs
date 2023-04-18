@@ -1,4 +1,5 @@
 ﻿using DataAccess.Abstract;
+using DataAccess.Concrete.EntityFramework.Context;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,11 @@ namespace DataAccess.Concrete.EntityFramework
     {
         public void add(Ulke ulke)
         {
-            throw new NotImplementedException();
+            using (var context = new CurrentDbContext())
+            {
+                context.Ulkes.Add(ulke);
+                context.SaveChanges();
+            }
         }
     }
 }
