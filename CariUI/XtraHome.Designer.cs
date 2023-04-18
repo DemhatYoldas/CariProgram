@@ -34,6 +34,7 @@
             btncarilistes = new DevExpress.XtraBars.BarButtonItem();
             btnGrubekle = new DevExpress.XtraBars.BarButtonItem();
             btnclose = new DevExpress.XtraBars.BarButtonItem();
+            btnCariEkleme = new DevExpress.XtraBars.BarButtonItem();
             ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -45,9 +46,9 @@
             // ribbonControl1
             // 
             ribbonControl1.ExpandCollapseItem.Id = 0;
-            ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] { ribbonControl1.ExpandCollapseItem, ribbonControl1.SearchEditItem, btncarilistes, btnGrubekle, btnclose });
+            ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] { ribbonControl1.ExpandCollapseItem, ribbonControl1.SearchEditItem, btncarilistes, btnGrubekle, btnclose, btnCariEkleme });
             ribbonControl1.Location = new Point(0, 0);
-            ribbonControl1.MaxItemId = 4;
+            ribbonControl1.MaxItemId = 5;
             ribbonControl1.Name = "ribbonControl1";
             ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] { ribbonPage1 });
             ribbonControl1.Size = new Size(890, 150);
@@ -78,6 +79,15 @@
             btnclose.Name = "btnclose";
             btnclose.ItemClick += btnclose_ItemClick;
             // 
+            // btnCariEkleme
+            // 
+            btnCariEkleme.Caption = "Cari EKleme";
+            btnCariEkleme.Id = 4;
+            btnCariEkleme.ImageOptions.Image = (Image)resources.GetObject("barButtonItem1.ImageOptions.Image");
+            btnCariEkleme.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem1.ImageOptions.LargeImage");
+            btnCariEkleme.Name = "btnCariEkleme";
+            btnCariEkleme.ItemClick += btnCariEkleme_ItemClick;
+            // 
             // ribbonPage1
             // 
             ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] { ribbonPageGroup1, ribbonPageGroup2 });
@@ -87,6 +97,7 @@
             // ribbonPageGroup1
             // 
             ribbonPageGroup1.ItemLinks.Add(btncarilistes);
+            ribbonPageGroup1.ItemLinks.Add(btnCariEkleme);
             ribbonPageGroup1.ItemLinks.Add(btnGrubekle);
             ribbonPageGroup1.Name = "ribbonPageGroup1";
             ribbonPageGroup1.Text = "Kayıt";
@@ -128,5 +139,6 @@
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
         private DevExpress.XtraBars.BarButtonItem btnclose;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
+        private DevExpress.XtraBars.BarButtonItem btnCariEkleme;
     }
 }

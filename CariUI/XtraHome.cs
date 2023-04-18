@@ -37,5 +37,12 @@ namespace CariUI
         {
 
         }
+
+        private void btnCariEkleme_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            XtraCariEkle cariEkle;
+            cariEkle = new XtraCariEkle();
+            cariEkle.Show();
+        }
     }
 }
