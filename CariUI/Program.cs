@@ -19,7 +19,7 @@ namespace CariUI
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Container = Configure();
-            Application.Run(new XtraHome(Container.Resolve<IGrubService>(), Container.Resolve<ITurServis>(), Container.Resolve<IUlkeServis>(), Container.Resolve<ISehirServis>()));
+            Application.Run(new XtraHome(Container.Resolve<IGrubService>(), Container.Resolve<ITurServis>(), Container.Resolve<IUlkeServis>(), Container.Resolve<ISehirServis>() , Container.Resolve<IÝlceServis>()));
         }
 
         static IContainer Configure()
@@ -37,8 +37,8 @@ namespace CariUI
             builder.RegisterType<SehirManager>().As<ISehirServis>();
             builder.RegisterType<EfSehirDal>().As<ISehirDal>();
 
-            //builder.RegisterType<ÝlceManager>().As<IÝlceServis>();
-            //builder.RegisterType<EfÝlceDal>().As<IÝlceDal>();
+            builder.RegisterType<ÝlceManager>().As<IÝlceServis>();
+            builder.RegisterType<EfÝlceDal>().As<IÝlceDal>();
 
             //builder.RegisterType<BilgilerimManager>().As<IBilgilerimServis>();
             //builder.RegisterType<EfBilgilerimDal>().As<IBilgilerimDal>();

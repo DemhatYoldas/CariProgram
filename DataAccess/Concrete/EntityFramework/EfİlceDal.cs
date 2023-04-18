@@ -1,4 +1,5 @@
 ﻿using DataAccess.Abstract;
+using DataAccess.Concrete.EntityFramework.Context;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,12 @@ namespace DataAccess.Concrete.EntityFramework
     {
         public void add(İlce ilce)
         {
-            throw new NotImplementedException();
+            using (var contex = new CurrentDbContext())
+            {
+                contex.İlces.Add(ilce);
+                contex.SaveChanges();
+            }
         }
+       
     }
 }

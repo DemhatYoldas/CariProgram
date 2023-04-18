@@ -43,7 +43,7 @@ namespace CariUI
         {
             Sehir sehir = new Sehir()
             {
-                Ulkesid= ulkeId,
+                Ulkesid = ulkeId,
                 Sehiradi = textEditSehirEkle.Text
 
             };
@@ -53,10 +53,10 @@ namespace CariUI
             {
 
             }
-          
+
         }
 
-       
+
 
         private void comboBoxUlke_SelectedIndexChanged(object sender, EventArgs e)
         {

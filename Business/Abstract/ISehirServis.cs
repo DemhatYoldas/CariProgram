@@ -10,6 +10,9 @@ namespace Business.Abstract
     public interface ISehirServis
     {
         bool add(Sehir sehir);
-       
+        Sehir Get(int id);
+        int GetSehirId(string Ulkeadi);
+        List<Sehir> GetList();
+
     }
 }

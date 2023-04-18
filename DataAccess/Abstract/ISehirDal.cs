@@ -10,5 +10,7 @@ namespace DataAccess.Abstract
     public interface ISehirDal
     {
         void add(Sehir sehir);
+        Sehir Get(int id);
+        List<Sehir> GetList();
     }
 }

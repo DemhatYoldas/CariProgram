@@ -9,7 +9,8 @@ namespace Entities.Concrete
     public class İlce
     {
         public int id { get; set; }
-        public string İlceadi { get; set; }
+        public string İlceAdi { get; set; }
         public int Sehirsid { get; set; }
+      
     }
 }

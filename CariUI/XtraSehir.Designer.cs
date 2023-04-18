@@ -82,6 +82,7 @@
             comboBoxUlke.Location = new Point(86, 12);
             comboBoxUlke.Name = "comboBoxUlke";
             comboBoxUlke.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
+            comboBoxUlke.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             comboBoxUlke.Size = new Size(236, 20);
             comboBoxUlke.StyleController = layoutControl1;
             comboBoxUlke.TabIndex = 4;
@@ -221,7 +222,7 @@
             Controls.Add(barDockControlBottom);
             Controls.Add(barDockControlTop);
             Name = "XtraSehir";
-            StartPosition = FormStartPosition.CenterParent;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Şehir Ekle";
             Load += XtraSehir_Load;
             ((System.ComponentModel.ISupportInitialize)layoutControl1).EndInit();

@@ -7,7 +7,6 @@ using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -33,6 +32,21 @@ namespace Business.Concrete
 
             }
             return false;
+        }
+
+        public Sehir Get(int id)
+        {
+            return _sehirDal.Get(id);
+        }
+
+        public List<Sehir> GetList()
+        {
+            return _sehirDal.GetList();
+        }
+
+        public int GetSehirId(string Sehiradi)
+        {
+            return _sehirDal.GetList().Where(g =>g.Sehiradi==Sehiradi).Select(s => s.id).FirstOrDefault();
         }
     }
 }

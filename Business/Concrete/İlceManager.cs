@@ -1,9 +1,13 @@
 ﻿using Business.Abstract;
+using Business.Validation.FluentValidation;
+using Core.CrossCuttingConcems.Validation;
 using DataAccess.Abstract;
+using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,8 +24,16 @@ namespace Business.Concrete
 
         public bool add(İlce ilce)
         {
-            _ilceDal.add(ilce);
-            return true;
+            bool validation = ValidationTool.Validate(new İlceValidator(), ilce);
+            if (validation)
+            {
+                _ilceDal.add(ilce);
+                MessageBox.Show("ilçe Başarıyla şehire eklendi", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return true;
+
+            }
+            return false;
         }
+         
     }
 }

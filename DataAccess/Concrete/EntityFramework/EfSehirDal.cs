@@ -19,5 +19,23 @@ namespace DataAccess.Concrete.EntityFramework
                 context.SaveChanges();
             }
         }
+
+        public Sehir Get(int id)
+        {
+            using (var context = new CurrentDbContext())
+            {
+                var result = context.Sehirs.Where(x => x.id == id).FirstOrDefault();
+                return result;
+            }
+        }
+
+        public List<Sehir> GetList()
+        {
+            using (var context = new CurrentDbContext())
+            {
+                var result = context.Sehirs.ToList();
+                return result;
+            }
+        }
     }
 }
