@@ -31,11 +31,11 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XtraTurekle));
             layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             textEditunvan = new DevExpress.XtraEditors.TextEdit();
             barManager1 = new DevExpress.XtraBars.BarManager(components);
             bar2 = new DevExpress.XtraBars.Bar();
             barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             bar3 = new DevExpress.XtraBars.Bar();
             barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
@@ -50,7 +50,6 @@
             layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)layoutControl1).BeginInit();
             layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)textEditunvan.Properties).BeginInit();
@@ -64,12 +63,10 @@
             ((System.ComponentModel.ISupportInitialize)layoutControlItem2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem5).BeginInit();
             SuspendLayout();
             // 
             // layoutControl1
             // 
-            layoutControl1.Controls.Add(simpleButton1);
             layoutControl1.Controls.Add(textEditunvan);
             layoutControl1.Controls.Add(textEditkod);
             layoutControl1.Controls.Add(textEditTur);
@@ -78,26 +75,16 @@
             layoutControl1.Location = new Point(0, 24);
             layoutControl1.Name = "layoutControl1";
             layoutControl1.Root = Root;
-            layoutControl1.Size = new Size(298, 224);
+            layoutControl1.Size = new Size(366, 155);
             layoutControl1.TabIndex = 0;
             layoutControl1.Text = "layoutControl1";
-            // 
-            // simpleButton1
-            // 
-            simpleButton1.ImageOptions.Image = (Image)resources.GetObject("simpleButton1.ImageOptions.Image");
-            simpleButton1.Location = new Point(12, 176);
-            simpleButton1.Name = "simpleButton1";
-            simpleButton1.Size = new Size(274, 36);
-            simpleButton1.StyleController = layoutControl1;
-            simpleButton1.TabIndex = 8;
-            simpleButton1.Text = "Kaydet";
             // 
             // textEditunvan
             // 
             textEditunvan.Location = new Point(107, 84);
             textEditunvan.MenuManager = barManager1;
             textEditunvan.Name = "textEditunvan";
-            textEditunvan.Size = new Size(179, 20);
+            textEditunvan.Size = new Size(247, 20);
             textEditunvan.StyleController = layoutControl1;
             textEditunvan.TabIndex = 7;
             // 
@@ -109,9 +96,9 @@
             barManager1.DockControls.Add(barDockControlLeft);
             barManager1.DockControls.Add(barDockControlRight);
             barManager1.Form = this;
-            barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] { barButtonItem1 });
+            barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] { barButtonItem1, barButtonItem2 });
             barManager1.MainMenu = bar2;
-            barManager1.MaxItemId = 1;
+            barManager1.MaxItemId = 2;
             barManager1.StatusBar = bar3;
             // 
             // bar2
@@ -120,7 +107,7 @@
             bar2.DockCol = 0;
             bar2.DockRow = 0;
             bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            bar2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] { new DevExpress.XtraBars.LinkPersistInfo(barButtonItem1) });
+            bar2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] { new DevExpress.XtraBars.LinkPersistInfo(barButtonItem1), new DevExpress.XtraBars.LinkPersistInfo(barButtonItem2) });
             bar2.OptionsBar.MultiLine = true;
             bar2.OptionsBar.UseWholeRow = true;
             bar2.Text = "Main menu";
@@ -134,6 +121,16 @@
             barButtonItem1.Name = "barButtonItem1";
             barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             barButtonItem1.ItemClick += barButtonItem1_ItemClick;
+            // 
+            // barButtonItem2
+            // 
+            barButtonItem2.Caption = "Tür Ekle";
+            barButtonItem2.Id = 1;
+            barButtonItem2.ImageOptions.Image = (Image)resources.GetObject("barButtonItem2.ImageOptions.Image");
+            barButtonItem2.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem2.ImageOptions.LargeImage");
+            barButtonItem2.Name = "barButtonItem2";
+            barButtonItem2.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            barButtonItem2.ItemClick += barButtonItem2_ItemClick;
             // 
             // bar3
             // 
@@ -153,15 +150,15 @@
             barDockControlTop.Dock = DockStyle.Top;
             barDockControlTop.Location = new Point(0, 0);
             barDockControlTop.Manager = barManager1;
-            barDockControlTop.Size = new Size(298, 24);
+            barDockControlTop.Size = new Size(366, 24);
             // 
             // barDockControlBottom
             // 
             barDockControlBottom.CausesValidation = false;
             barDockControlBottom.Dock = DockStyle.Bottom;
-            barDockControlBottom.Location = new Point(0, 248);
+            barDockControlBottom.Location = new Point(0, 179);
             barDockControlBottom.Manager = barManager1;
-            barDockControlBottom.Size = new Size(298, 20);
+            barDockControlBottom.Size = new Size(366, 20);
             // 
             // barDockControlLeft
             // 
@@ -169,15 +166,15 @@
             barDockControlLeft.Dock = DockStyle.Left;
             barDockControlLeft.Location = new Point(0, 24);
             barDockControlLeft.Manager = barManager1;
-            barDockControlLeft.Size = new Size(0, 224);
+            barDockControlLeft.Size = new Size(0, 155);
             // 
             // barDockControlRight
             // 
             barDockControlRight.CausesValidation = false;
             barDockControlRight.Dock = DockStyle.Right;
-            barDockControlRight.Location = new Point(298, 24);
+            barDockControlRight.Location = new Point(366, 24);
             barDockControlRight.Manager = barManager1;
-            barDockControlRight.Size = new Size(0, 224);
+            barDockControlRight.Size = new Size(0, 155);
             // 
             // textEditkod
             // 
@@ -186,7 +183,7 @@
             textEditkod.Name = "textEditkod";
             textEditkod.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
             textEditkod.Properties.MaskSettings.Set("mask", "00000");
-            textEditkod.Size = new Size(179, 20);
+            textEditkod.Size = new Size(247, 20);
             textEditkod.StyleController = layoutControl1;
             textEditkod.TabIndex = 6;
             // 
@@ -195,7 +192,7 @@
             textEditTur.Location = new Point(107, 36);
             textEditTur.MenuManager = barManager1;
             textEditTur.Name = "textEditTur";
-            textEditTur.Size = new Size(179, 20);
+            textEditTur.Size = new Size(247, 20);
             textEditTur.StyleController = layoutControl1;
             textEditTur.TabIndex = 5;
             // 
@@ -206,7 +203,7 @@
             comboBoxGrub.Name = "comboBoxGrub";
             comboBoxGrub.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
             comboBoxGrub.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            comboBoxGrub.Size = new Size(179, 20);
+            comboBoxGrub.Size = new Size(247, 20);
             comboBoxGrub.StyleController = layoutControl1;
             comboBoxGrub.TabIndex = 4;
             comboBoxGrub.SelectedIndexChanged += comboBoxGrub_SelectedIndexChanged;
@@ -215,17 +212,19 @@
             // 
             Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             Root.GroupBordersVisible = false;
-            Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] { layoutControlItem1, emptySpaceItem1, layoutControlItem2, layoutControlItem3, layoutControlItem4, layoutControlItem5 });
+            Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] { layoutControlItem1, emptySpaceItem1, layoutControlItem2, layoutControlItem3, layoutControlItem4 });
             Root.Name = "Root";
-            Root.Size = new Size(298, 224);
+            Root.Size = new Size(366, 155);
             Root.TextVisible = false;
             // 
             // layoutControlItem1
             // 
             layoutControlItem1.Control = comboBoxGrub;
             layoutControlItem1.Location = new Point(0, 0);
+            layoutControlItem1.MinSize = new Size(149, 24);
             layoutControlItem1.Name = "layoutControlItem1";
-            layoutControlItem1.Size = new Size(278, 24);
+            layoutControlItem1.Size = new Size(346, 24);
+            layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             layoutControlItem1.Text = "Grub Adı Seçiniz :";
             layoutControlItem1.TextSize = new Size(83, 13);
             // 
@@ -234,7 +233,7 @@
             emptySpaceItem1.AllowHotTrack = false;
             emptySpaceItem1.Location = new Point(0, 96);
             emptySpaceItem1.Name = "emptySpaceItem1";
-            emptySpaceItem1.Size = new Size(278, 68);
+            emptySpaceItem1.Size = new Size(346, 39);
             emptySpaceItem1.TextSize = new Size(0, 0);
             // 
             // layoutControlItem2
@@ -242,7 +241,7 @@
             layoutControlItem2.Control = textEditTur;
             layoutControlItem2.Location = new Point(0, 24);
             layoutControlItem2.Name = "layoutControlItem2";
-            layoutControlItem2.Size = new Size(278, 24);
+            layoutControlItem2.Size = new Size(346, 24);
             layoutControlItem2.Text = "Tür Adı :";
             layoutControlItem2.TextSize = new Size(83, 13);
             // 
@@ -251,7 +250,7 @@
             layoutControlItem3.Control = textEditkod;
             layoutControlItem3.Location = new Point(0, 48);
             layoutControlItem3.Name = "layoutControlItem3";
-            layoutControlItem3.Size = new Size(278, 24);
+            layoutControlItem3.Size = new Size(346, 24);
             layoutControlItem3.Text = "Kodu :";
             layoutControlItem3.TextSize = new Size(83, 13);
             // 
@@ -260,24 +259,15 @@
             layoutControlItem4.Control = textEditunvan;
             layoutControlItem4.Location = new Point(0, 72);
             layoutControlItem4.Name = "layoutControlItem4";
-            layoutControlItem4.Size = new Size(278, 24);
+            layoutControlItem4.Size = new Size(346, 24);
             layoutControlItem4.Text = "Ünvanı :";
             layoutControlItem4.TextSize = new Size(83, 13);
-            // 
-            // layoutControlItem5
-            // 
-            layoutControlItem5.Control = simpleButton1;
-            layoutControlItem5.Location = new Point(0, 164);
-            layoutControlItem5.Name = "layoutControlItem5";
-            layoutControlItem5.Size = new Size(278, 40);
-            layoutControlItem5.TextSize = new Size(0, 0);
-            layoutControlItem5.TextVisible = false;
             // 
             // XtraTurekle
             // 
             AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(298, 268);
+            ClientSize = new Size(366, 199);
             Controls.Add(layoutControl1);
             Controls.Add(barDockControlLeft);
             Controls.Add(barDockControlRight);
@@ -300,7 +290,6 @@
             ((System.ComponentModel.ISupportInitialize)layoutControlItem2).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem3).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem5).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -308,7 +297,6 @@
         #endregion
 
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.TextEdit textEditunvan;
         private DevExpress.XtraBars.BarManager barManager1;
         private DevExpress.XtraBars.Bar bar2;
@@ -327,6 +315,6 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
     }
 }

@@ -17,11 +17,13 @@ namespace CariUI
     public partial class XtraHome : DevExpress.XtraEditors.XtraForm
     {
         private readonly IGrubService _grubService;
+        private readonly ITurServis _turService;
        
-        public XtraHome(IGrubService grubService)
+        public XtraHome(IGrubService grubService, ITurServis turService)
         {
             InitializeComponent();
             _grubService = grubService;
+            _turService = turService;
         }
 
         private void btnclose_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -46,7 +48,7 @@ namespace CariUI
         private void btnCariEkleme_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             XtraCariEkle cariEkle;
-            cariEkle = new XtraCariEkle(_grubService);
+            cariEkle = new XtraCariEkle(_grubService,_turService);
             cariEkle.Show();
         }
     }

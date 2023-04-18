@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Abstract
 {
-    internal interface ISehirDal
+    public interface ISehirDal
     {
         void add(Sehir sehir);
     }

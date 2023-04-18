@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Abstract
 {
-    internal interface IİlceDal
+    public interface IİlceDal
     {
         void add(İlce ilce);
     }

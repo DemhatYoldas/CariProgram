@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using DataAccess.Abstract;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace Business.Abstract
 {
     public interface IBilgilerimServis
     {
+        
         bool add(Bilgilerim bilgilerim);
     }
 }

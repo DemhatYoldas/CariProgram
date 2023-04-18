@@ -15,11 +15,13 @@ namespace CariUI
     public partial class XtraCariEkle : DevExpress.XtraEditors.XtraForm
     {
         IGrubService _grubService;
+        ITurServis _turService;
 
-        public XtraCariEkle(IGrubService grubService)
+        public XtraCariEkle(IGrubService grubService, ITurServis turService)
         {
             InitializeComponent();
             _grubService = grubService;
+            _turService = turService;
         }
 
         private void XtraCariEkle_Load(object sender, EventArgs e)
@@ -45,7 +47,7 @@ namespace CariUI
 
         private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            XtraTurekle turek = new XtraTurekle(_grubService);
+            XtraTurekle turek = new XtraTurekle(_grubService, _turService);
             turek.Show();
         }
     }

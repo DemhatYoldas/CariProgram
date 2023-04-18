@@ -19,7 +19,7 @@ namespace CariUI
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Container = Configure();
-            Application.Run(new XtraHome(Container.Resolve<IGrubService>()));
+            Application.Run(new XtraHome(Container.Resolve<IGrubService>(), Container.Resolve<ITurServis>()));
         }
 
         static IContainer Configure()
@@ -27,6 +27,10 @@ namespace CariUI
             var builder = new ContainerBuilder();
             builder.RegisterType<GrubManager>().As<IGrubService>();
             builder.RegisterType<EfGrubDal>().As<IGrubDal>();
+
+            builder.RegisterType<TurManager>().As<ITurServis>();
+            builder.RegisterType<EfTurDal>().As<ITurDal>();
+
             builder.RegisterType<XtraHome>();
             return builder.Build();
         }

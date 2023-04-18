@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using DevExpress.XtraEditors;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,11 +15,13 @@ namespace CariUI
     public partial class XtraTurekle : DevExpress.XtraEditors.XtraForm
     {
         IGrubService _grubService;
+        ITurServis _turService;
 
-        public XtraTurekle(IGrubService grubService)
+        public XtraTurekle(IGrubService grubService, ITurServis turService)
         {
             InitializeComponent();
             _grubService = grubService;
+            _turService = turService;
         }
 
         int grubId = 0;
@@ -42,6 +45,24 @@ namespace CariUI
         {
             grubId = _grubService.GetgrubId(comboBoxGrub.Text);
             //MessageBox.Show(grubId.ToString()); id kontrol ettik 
+        }
+
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Tur tur = new Tur()
+            {
+                Grubsid = grubId,
+                Kod = textEditkod.Text,
+                Unvan = textEditunvan.Text,
+                Turadi = textEditTur.Text
+            };
+
+            var result = _turService.add(tur);
+            if (result)
+            {
+
+
+            }
         }
     }
 }
