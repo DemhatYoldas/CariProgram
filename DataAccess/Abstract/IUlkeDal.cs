@@ -10,5 +10,7 @@ namespace DataAccess.Abstract
     public interface IUlkeDal
     {
         void add(Ulke ulke);
+        Ulke Get(int id);
+        List<Ulke> GetList();
     }
 }

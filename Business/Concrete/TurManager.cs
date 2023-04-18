@@ -26,7 +26,7 @@ namespace Business.Concrete
             if (validation)
             {
                 _turDal.add(tur);
-                MessageBox.Show("Tur başarıyla eklendi","Başarılı",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("Tür başarıyla eklendi","Başarılı",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 return true;
             }
             return false;

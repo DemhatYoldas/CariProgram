@@ -17,5 +17,10 @@ namespace CariUI
         {
             InitializeComponent();
         }
+
+        private void Xtraİlce_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

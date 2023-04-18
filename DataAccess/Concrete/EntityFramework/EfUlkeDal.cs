@@ -19,5 +19,23 @@ namespace DataAccess.Concrete.EntityFramework
                 context.SaveChanges();
             }
         }
+
+        public Ulke Get(int id)
+        {
+            using (var context = new CurrentDbContext())
+            {
+                var result = context.Ulkes.Where(x => x.id == id).FirstOrDefault();
+                return result;
+            }
+        }
+
+        public List<Ulke> GetList()
+        {
+            using (var context = new CurrentDbContext())
+            {
+                var result = context.Ulkes.ToList();
+                return result;
+            }
+        }
     }
 }

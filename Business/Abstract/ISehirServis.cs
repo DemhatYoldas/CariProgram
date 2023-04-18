@@ -10,5 +10,6 @@ namespace Business.Abstract
     public interface ISehirServis
     {
         bool add(Sehir sehir);
+       
     }
 }

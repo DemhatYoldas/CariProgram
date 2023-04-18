@@ -19,7 +19,7 @@ namespace CariUI
         public XtraUlke(IUlkeServis ulkeServis)
         {
             InitializeComponent();
-            _ulkeServis=ulkeServis;
+            _ulkeServis = ulkeServis;
         }
 
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

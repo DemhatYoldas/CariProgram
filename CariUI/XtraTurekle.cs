@@ -60,7 +60,7 @@ namespace CariUI
             var result = _turService.add(tur);
             if (result)
             {
-
+                //System.ArgumentException: 'The type 'Business.Concrete.UlkeManager' is not assignable to service 'Business.Abstract.IUlkeServis'.'
 
             }
         }

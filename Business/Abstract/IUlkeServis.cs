@@ -10,5 +10,8 @@ namespace Business.Abstract
     public interface IUlkeServis
     {
         bool add(Ulke ulke);
+        Ulke Get(int id);
+        int GetulkeId(string Ulkeadi);
+        List<Ulke> GetList();
     }
 }

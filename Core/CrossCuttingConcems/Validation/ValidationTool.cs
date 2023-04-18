@@ -26,6 +26,11 @@ namespace Core.CrossCuttingConcems.Validation
             }
             return true;
         }
+
+        public static bool Validate()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 

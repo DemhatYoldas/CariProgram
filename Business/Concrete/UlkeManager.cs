@@ -34,5 +34,20 @@ namespace Business.Concrete
             }
             return false;
         }
+
+        public Ulke Get(int id)
+        {
+            return _ulkeDal.Get(id);
+        }
+
+        public List<Ulke> GetList()
+        {
+            return _ulkeDal.GetList();
+        }
+
+        public int GetulkeId(string Ulkeadi)
+        {
+            return _ulkeDal.GetList().Where(g => g.Ulkeadi == Ulkeadi).Select(s => s.id).FirstOrDefault();
+        }
     }
 }
