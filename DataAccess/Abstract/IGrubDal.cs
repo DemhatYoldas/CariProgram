@@ -14,5 +14,7 @@ namespace DataAccess.Abstract
         void Delete(Grub grub);
         Grub Get(int id);
         List<Grub> GetList();
+        bool CheckGrubUses(int grubId);
+       
     }
 }

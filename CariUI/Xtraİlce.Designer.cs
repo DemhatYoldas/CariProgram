@@ -172,6 +172,7 @@
             comboBoxsehiradi.MenuManager = barManager1;
             comboBoxsehiradi.Name = "comboBoxsehiradi";
             comboBoxsehiradi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
+            comboBoxsehiradi.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             comboBoxsehiradi.Size = new Size(370, 20);
             comboBoxsehiradi.StyleController = layoutControl1;
             comboBoxsehiradi.TabIndex = 5;

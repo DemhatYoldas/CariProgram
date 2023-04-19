@@ -20,6 +20,16 @@ namespace DataAccess.Concrete.EntityFramework
             }
         }
 
+        public bool CheckGrubUses(int grubId)
+        {
+            //grub kullanılmışsa silme işlemi olamz kullanılmamışsa silme işlemi olur 
+            using (var context = new CurrentDbContext())
+            {
+                var result = context.Grubs.Where(g => g.id == grubId);
+                return (result.Count() > 0 ? false:true);
+            }
+        }
+
         public void Delete(Grub grub)
         {
             using (var context = new CurrentDbContext())

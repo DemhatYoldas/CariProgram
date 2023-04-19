@@ -2,6 +2,7 @@
 using Business.Validation.FluentValidation;
 using Core.CrossCuttingConcems.Validation;
 using DataAccess.Abstract;
+using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -31,6 +32,17 @@ namespace Business.Concrete
             }
             return false;
           
+        }
+
+        public List<Tur> GetList()
+        {
+          return _turDal.GetList();
+        }
+
+        public int GetturId(string turName)
+        {
+            // cari  ekleme işleminde tur name göre id kaydedecez
+            return _turDal.GetList().Where(g => g.Turadi == turName).Select(s => s.id).FirstOrDefault();
         }
     }
 }

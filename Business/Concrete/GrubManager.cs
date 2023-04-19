@@ -36,6 +36,14 @@ namespace Business.Concrete
 
         public void Delete(Grub grub)
         {
+            //  HATA ALIYORUM BAĞLI OLMAYANLARI BİLE SİLMİYOR 
+            //var result = _grubDal.CheckGrubUses(grub.id);
+            //if (!result)
+            //{
+            //    MessageBox.Show("Bu grub atanmış Türler olduğundan bolüm silinemiyor ", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    return;
+                
+            //}
             _grubDal.Delete(grub);
         }
 
@@ -52,7 +60,7 @@ namespace Business.Concrete
         public int GetgrubId(string grubName)
         {
             // tur ekleme işleminde grub name göre id kaydedecez
-          return _grubDal.GetList().Where(g=>g.Grubadi==grubName).Select(s=>s.id).FirstOrDefault();
+            return _grubDal.GetList().Where(g => g.Grubadi == grubName).Select(s => s.id).FirstOrDefault();
         }
 
         public bool Update(Grub grub)

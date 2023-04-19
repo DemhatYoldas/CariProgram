@@ -65,7 +65,7 @@ namespace CariUI
             if (btnSave.Text == "Güncelle")
             {
                 var findgrup = _grubServices.Get(_id);
-                findgrup.Grubadi = txtGrubName.Text;
+                findgrup.Grubadi = txtGrubName.Text.ToLower();
                 var result = _grubServices.Update(findgrup);
                 if (result)
                 {
@@ -81,12 +81,13 @@ namespace CariUI
                 // Kaydet işlemi
                 Grub grub = new Grub
                 {
-                    Grubadi = txtGrubName.Text
+                    Grubadi = txtGrubName.Text.ToLower()
                 };
 
                 //_grubServices.Add(grub);
 
                 // status yada durum için 
+                
                 var result = _grubServices.Add(grub);
                 if (result)
                 {

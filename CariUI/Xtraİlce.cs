@@ -71,7 +71,7 @@ namespace CariUI
 
         private void comboBoxsehiradi_SelectedIndexChanged(object sender, EventArgs e)
         {
-            SehirId = _sehirServis.GetSehirId(comboBoxsehiradi.Text);
+            SehirId = _sehirServis.GetSehirId(comboBoxsehiradi.Text.ToUpper());
         }
     }
 }

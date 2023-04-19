@@ -60,7 +60,7 @@ namespace CariUI
 
         private void comboBoxUlke_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ulkeId = _ulkeServis.GetulkeId(comboBoxUlke.Text);
+            ulkeId = _ulkeServis.GetulkeId(comboBoxUlke.Text.ToUpper());
 
         }
 

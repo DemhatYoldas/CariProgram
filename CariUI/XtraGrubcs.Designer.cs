@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XtraGrubcs));
             layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             btnClose = new DevExpress.XtraEditors.SimpleButton();
             btnSave = new DevExpress.XtraEditors.SimpleButton();
             gC1 = new DevExpress.XtraGrid.GridControl();
@@ -49,7 +48,6 @@
             layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)layoutControl1).BeginInit();
             layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)gC1).BeginInit();
@@ -63,12 +61,10 @@
             ((System.ComponentModel.ISupportInitialize)layoutControlItem2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem5).BeginInit();
             SuspendLayout();
             // 
             // layoutControl1
             // 
-            layoutControl1.Controls.Add(simpleButton3);
             layoutControl1.Controls.Add(btnClose);
             layoutControl1.Controls.Add(btnSave);
             layoutControl1.Controls.Add(gC1);
@@ -80,15 +76,6 @@
             layoutControl1.Size = new Size(738, 588);
             layoutControl1.TabIndex = 0;
             layoutControl1.Text = "layoutControl1";
-            // 
-            // simpleButton3
-            // 
-            simpleButton3.Location = new Point(12, 116);
-            simpleButton3.Name = "simpleButton3";
-            simpleButton3.Size = new Size(714, 22);
-            simpleButton3.StyleController = layoutControl1;
-            simpleButton3.TabIndex = 8;
-            simpleButton3.Text = "simpleButton3";
             // 
             // btnClose
             // 
@@ -202,7 +189,7 @@
             // 
             Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             Root.GroupBordersVisible = false;
-            Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] { layoutControlItem1, emptySpaceItem1, layoutControlItem2, layoutControlItem3, layoutControlItem4, layoutControlItem5 });
+            Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] { layoutControlItem1, emptySpaceItem1, layoutControlItem2, layoutControlItem3, layoutControlItem4 });
             Root.Name = "Root";
             Root.Size = new Size(738, 588);
             Root.TextVisible = false;
@@ -219,9 +206,9 @@
             // emptySpaceItem1
             // 
             emptySpaceItem1.AllowHotTrack = false;
-            emptySpaceItem1.Location = new Point(0, 130);
+            emptySpaceItem1.Location = new Point(0, 104);
             emptySpaceItem1.Name = "emptySpaceItem1";
-            emptySpaceItem1.Size = new Size(718, 89);
+            emptySpaceItem1.Size = new Size(718, 115);
             emptySpaceItem1.TextSize = new Size(0, 0);
             // 
             // layoutControlItem2
@@ -251,15 +238,6 @@
             layoutControlItem4.TextSize = new Size(0, 0);
             layoutControlItem4.TextVisible = false;
             // 
-            // layoutControlItem5
-            // 
-            layoutControlItem5.Control = simpleButton3;
-            layoutControlItem5.Location = new Point(0, 104);
-            layoutControlItem5.Name = "layoutControlItem5";
-            layoutControlItem5.Size = new Size(718, 26);
-            layoutControlItem5.TextSize = new Size(0, 0);
-            layoutControlItem5.TextVisible = false;
-            // 
             // XtraGrubcs
             // 
             AutoScaleDimensions = new SizeF(6F, 13F);
@@ -284,14 +262,12 @@
             ((System.ComponentModel.ISupportInitialize)layoutControlItem2).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem3).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem5).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraEditors.SimpleButton btnClose;
         private DevExpress.XtraEditors.SimpleButton btnSave;
         private DevExpress.XtraGrid.GridControl gC1;
@@ -303,7 +279,6 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraGrid.Columns.GridColumn colId;
         private DevExpress.XtraGrid.Columns.GridColumn colName;
         private DevExpress.XtraGrid.Columns.GridColumn colDurum;

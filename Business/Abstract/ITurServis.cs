@@ -10,5 +10,8 @@ namespace Business.Abstract
     public interface ITurServis
     {
         bool add(Tur tur);
+        int GetturId(string turName);
+        List<Tur> GetList();
+
     }
 }

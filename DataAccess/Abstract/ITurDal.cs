@@ -10,5 +10,6 @@ namespace DataAccess.Abstract
     public interface ITurDal
     {
         void add(Tur tur);
+        List<Tur> GetList();
     }
 }

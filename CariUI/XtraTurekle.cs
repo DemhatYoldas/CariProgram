@@ -31,7 +31,7 @@ namespace CariUI
             var grubs = _grubService.GetList();
             foreach (var grub in grubs)
             {
-                comboBoxGrub.Properties.Items.Add(grub.Grubadi);
+                comboBoxGrub.Properties.Items.Add(grub.Grubadi.ToUpper());
             }
 
         }
@@ -43,7 +43,7 @@ namespace CariUI
 
         private void comboBoxGrub_SelectedIndexChanged(object sender, EventArgs e)
         {
-            grubId = _grubService.GetgrubId(comboBoxGrub.Text);
+            grubId = _grubService.GetgrubId(comboBoxGrub.Text.ToUpper());
             //MessageBox.Show(grubId.ToString()); id kontrol ettik 
         }
 

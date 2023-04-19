@@ -12,5 +12,8 @@ namespace Business.Abstract
     {
         
         bool add(Bilgilerim bilgilerim);
+        bool Update(Bilgilerim bilgilerim);
+        void Delete(Bilgilerim bilgilerim);
+        List<Bilgilerim> GetList();
     }
 }

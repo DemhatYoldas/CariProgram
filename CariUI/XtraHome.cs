@@ -1,16 +1,4 @@
 ﻿using Business.Abstract;
-using DevExpress.XtraEditors;
-using Entities.Concrete;
-using Microsoft.Identity.Client;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace CariUI
 {
@@ -44,7 +32,7 @@ namespace CariUI
             Grubcs.Show();
         }
 
-       
+
 
         private void XtraHome_Load(object sender, EventArgs e)
         {
@@ -54,8 +42,14 @@ namespace CariUI
         private void btnCariEkleme_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             XtraCariEkle cariEkle;
-            cariEkle = new XtraCariEkle(_grubService,_turService,_ulkeServis,_sehirServis, _ilceServis);
+            cariEkle = new XtraCariEkle(_grubService, _turService, _ulkeServis, _sehirServis, _ilceServis);
             cariEkle.Show();
+        }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            XtraForm1 form1 = new XtraForm1(_grubService, _turService, _ulkeServis, _sehirServis, _ilceServis);
+            form1.Show();
         }
     }
 }

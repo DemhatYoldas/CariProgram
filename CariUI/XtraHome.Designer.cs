@@ -39,6 +39,8 @@
             ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(components);
+            ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)ribbonControl1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)xtraTabbedMdiManager1).BeginInit();
             SuspendLayout();
@@ -46,9 +48,9 @@
             // ribbonControl1
             // 
             ribbonControl1.ExpandCollapseItem.Id = 0;
-            ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] { ribbonControl1.ExpandCollapseItem, ribbonControl1.SearchEditItem, btncarilistes, btnGrubekle, btnclose, btnCariEkleme });
+            ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] { ribbonControl1.ExpandCollapseItem, ribbonControl1.SearchEditItem, btncarilistes, btnGrubekle, btnclose, btnCariEkleme, barButtonItem1 });
             ribbonControl1.Location = new Point(0, 0);
-            ribbonControl1.MaxItemId = 5;
+            ribbonControl1.MaxItemId = 6;
             ribbonControl1.Name = "ribbonControl1";
             ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] { ribbonPage1 });
             ribbonControl1.Size = new Size(890, 150);
@@ -83,14 +85,14 @@
             // 
             btnCariEkleme.Caption = "Cari EKleme";
             btnCariEkleme.Id = 4;
-            btnCariEkleme.ImageOptions.Image = (Image)resources.GetObject("barButtonItem1.ImageOptions.Image");
-            btnCariEkleme.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem1.ImageOptions.LargeImage");
+            btnCariEkleme.ImageOptions.Image = (Image)resources.GetObject("btnCariEkleme.ImageOptions.Image");
+            btnCariEkleme.ImageOptions.LargeImage = (Image)resources.GetObject("btnCariEkleme.ImageOptions.LargeImage");
             btnCariEkleme.Name = "btnCariEkleme";
             btnCariEkleme.ItemClick += btnCariEkleme_ItemClick;
             // 
             // ribbonPage1
             // 
-            ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] { ribbonPageGroup1, ribbonPageGroup2 });
+            ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] { ribbonPageGroup1, ribbonPageGroup2, ribbonPageGroup3 });
             ribbonPage1.Name = "ribbonPage1";
             ribbonPage1.Text = "Cari Takip";
             // 
@@ -111,6 +113,21 @@
             // xtraTabbedMdiManager1
             // 
             xtraTabbedMdiManager1.MdiParent = this;
+            // 
+            // ribbonPageGroup3
+            // 
+            ribbonPageGroup3.ItemLinks.Add(barButtonItem1);
+            ribbonPageGroup3.Name = "ribbonPageGroup3";
+            ribbonPageGroup3.Text = "ribbonPageGroup3";
+            // 
+            // barButtonItem1
+            // 
+            barButtonItem1.Caption = "DENEME";
+            barButtonItem1.Id = 5;
+            barButtonItem1.ImageOptions.Image = (Image)resources.GetObject("barButtonItem1.ImageOptions.Image");
+            barButtonItem1.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem1.ImageOptions.LargeImage");
+            barButtonItem1.Name = "barButtonItem1";
+            barButtonItem1.ItemClick += barButtonItem1_ItemClick;
             // 
             // XtraHome
             // 
@@ -140,5 +157,7 @@
         private DevExpress.XtraBars.BarButtonItem btnclose;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.BarButtonItem btnCariEkleme;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
     }
 }

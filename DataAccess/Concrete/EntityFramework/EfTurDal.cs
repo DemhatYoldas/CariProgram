@@ -19,5 +19,14 @@ namespace DataAccess.Concrete.EntityFramework
                 context.SaveChanges();
             }
         }
+
+        public List<Tur> GetList()
+        {
+            using (var context = new CurrentDbContext())
+            {
+                var result = context.Turs.ToList();
+                return result;
+            }
+        }
     }
 }
