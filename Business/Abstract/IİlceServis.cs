@@ -10,5 +10,6 @@ namespace Business.Abstract
     public interface IİlceServis
     {
         bool add(İlce ilce);
+        List<İlce> GetList();
     }
 }

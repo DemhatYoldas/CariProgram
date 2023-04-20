@@ -11,6 +11,7 @@ namespace DataAccess.Concrete.EntityFramework
 {
     public class EfİlceDal : IİlceDal
     {
+        
         public void add(İlce ilce)
         {
             using (var contex = new CurrentDbContext())
@@ -19,6 +20,14 @@ namespace DataAccess.Concrete.EntityFramework
                 contex.SaveChanges();
             }
         }
-       
+
+        public List<İlce> GetList()
+        {
+            using (var context = new CurrentDbContext())
+            {
+                var result = context.İlces.ToList();
+                return result;
+            }
+        }
     }
 }

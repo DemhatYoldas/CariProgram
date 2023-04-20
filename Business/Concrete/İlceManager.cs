@@ -34,6 +34,10 @@ namespace Business.Concrete
             }
             return false;
         }
-         
+
+        public List<İlce> GetList()
+        {
+            return _ilceDal.GetList();
+        }
     }
 }

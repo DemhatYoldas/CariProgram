@@ -30,8 +30,7 @@
         {
             components = new System.ComponentModel.Container();
             layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            lookUpEdit2 = new DevExpress.XtraEditors.LookUpEdit();
+            lookUpEditilce = new DevExpress.XtraEditors.LookUpEdit();
             barManager1 = new DevExpress.XtraBars.BarManager(components);
             bar1 = new DevExpress.XtraBars.Bar();
             bar2 = new DevExpress.XtraBars.Bar();
@@ -40,41 +39,37 @@
             barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            lookUpEditulke = new DevExpress.XtraEditors.LookUpEdit();
+            simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            lookUpEdit2 = new DevExpress.XtraEditors.LookUpEdit();
             lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
             Root = new DevExpress.XtraLayout.LayoutControlGroup();
             grub = new DevExpress.XtraLayout.LayoutControlItem();
             emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             tür = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            lookUpEdit3 = new DevExpress.XtraEditors.LookUpEdit();
             Ulke = new DevExpress.XtraLayout.LayoutControlItem();
-            lookUpEdit4 = new DevExpress.XtraEditors.LookUpEdit();
-            sehir = new DevExpress.XtraLayout.LayoutControlItem();
-            lookUpEdit5 = new DevExpress.XtraEditors.LookUpEdit();
             ilce = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)layoutControl1).BeginInit();
             layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)lookUpEdit2.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)lookUpEditilce.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)barManager1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)lookUpEditulke.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)lookUpEdit2.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)lookUpEdit1.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Root).BeginInit();
             ((System.ComponentModel.ISupportInitialize)grub).BeginInit();
             ((System.ComponentModel.ISupportInitialize)emptySpaceItem1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)tür).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)lookUpEdit3.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Ulke).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)lookUpEdit4.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)sehir).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)lookUpEdit5.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ilce).BeginInit();
             SuspendLayout();
             // 
             // layoutControl1
             // 
-            layoutControl1.Controls.Add(lookUpEdit5);
-            layoutControl1.Controls.Add(lookUpEdit4);
-            layoutControl1.Controls.Add(lookUpEdit3);
+            layoutControl1.Controls.Add(lookUpEditilce);
+            layoutControl1.Controls.Add(lookUpEditulke);
             layoutControl1.Controls.Add(simpleButton1);
             layoutControl1.Controls.Add(lookUpEdit2);
             layoutControl1.Controls.Add(lookUpEdit1);
@@ -86,30 +81,20 @@
             layoutControl1.TabIndex = 0;
             layoutControl1.Text = "layoutControl1";
             // 
-            // simpleButton1
+            // lookUpEditilce
             // 
-            simpleButton1.Location = new Point(12, 173);
-            simpleButton1.Name = "simpleButton1";
-            simpleButton1.Size = new Size(274, 22);
-            simpleButton1.StyleController = layoutControl1;
-            simpleButton1.TabIndex = 6;
-            simpleButton1.Text = "simpleButton1";
-            // 
-            // lookUpEdit2
-            // 
-            lookUpEdit2.Location = new Point(47, 36);
-            lookUpEdit2.MenuManager = barManager1;
-            lookUpEdit2.Name = "lookUpEdit2";
-            lookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
-            lookUpEdit2.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] { new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Turadi", "") });
-            lookUpEdit2.Properties.DisplayMember = "Turadi";
-            lookUpEdit2.Properties.NullText = "";
-            lookUpEdit2.Properties.ValueMember = "id";
-            lookUpEdit2.Size = new Size(239, 20);
-            lookUpEdit2.StyleController = layoutControl1;
-            lookUpEdit2.TabIndex = 5;
-            lookUpEdit2.EditValueChanged += lookUpEdit2_EditValueChanged;
-            lookUpEdit2.TabIndexChanged += lookUpEdit2_TabIndexChanged;
+            lookUpEditilce.Location = new Point(46, 84);
+            lookUpEditilce.MenuManager = barManager1;
+            lookUpEditilce.Name = "lookUpEditilce";
+            lookUpEditilce.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
+            lookUpEditilce.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] { new DevExpress.XtraEditors.Controls.LookUpColumnInfo("İlceAdi", "") });
+            lookUpEditilce.Properties.DisplayMember = "İlceAdi";
+            lookUpEditilce.Properties.NullText = "";
+            lookUpEditilce.Properties.ValueMember = "id";
+            lookUpEditilce.Size = new Size(240, 20);
+            lookUpEditilce.StyleController = layoutControl1;
+            lookUpEditilce.TabIndex = 9;
+            lookUpEditilce.EditValueChanged += lookUpEditilce_EditValueChanged;
             // 
             // barManager1
             // 
@@ -187,9 +172,50 @@
             barDockControlRight.Manager = barManager1;
             barDockControlRight.Size = new Size(0, 207);
             // 
+            // lookUpEditulke
+            // 
+            lookUpEditulke.Location = new Point(46, 60);
+            lookUpEditulke.MenuManager = barManager1;
+            lookUpEditulke.Name = "lookUpEditulke";
+            lookUpEditulke.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
+            lookUpEditulke.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] { new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Ulkeadi", "") });
+            lookUpEditulke.Properties.DisplayMember = "Ulkeadi";
+            lookUpEditulke.Properties.NullText = "";
+            lookUpEditulke.Properties.ValueMember = "id";
+            lookUpEditulke.Properties.EditValueChanging += lookUpEditulke_Properties_EditValueChanging;
+            lookUpEditulke.Size = new Size(240, 20);
+            lookUpEditulke.StyleController = layoutControl1;
+            lookUpEditulke.TabIndex = 7;
+            lookUpEditulke.EditValueChanged += lookUpEditulke_EditValueChanged;
+            // 
+            // simpleButton1
+            // 
+            simpleButton1.Location = new Point(12, 173);
+            simpleButton1.Name = "simpleButton1";
+            simpleButton1.Size = new Size(274, 22);
+            simpleButton1.StyleController = layoutControl1;
+            simpleButton1.TabIndex = 6;
+            simpleButton1.Text = "simpleButton1";
+            // 
+            // lookUpEdit2
+            // 
+            lookUpEdit2.Location = new Point(46, 36);
+            lookUpEdit2.MenuManager = barManager1;
+            lookUpEdit2.Name = "lookUpEdit2";
+            lookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
+            lookUpEdit2.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] { new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Turadi", "") });
+            lookUpEdit2.Properties.DisplayMember = "Turadi";
+            lookUpEdit2.Properties.NullText = "";
+            lookUpEdit2.Properties.ValueMember = "id";
+            lookUpEdit2.Size = new Size(240, 20);
+            lookUpEdit2.StyleController = layoutControl1;
+            lookUpEdit2.TabIndex = 5;
+            lookUpEdit2.EditValueChanged += lookUpEdit2_EditValueChanged;
+            lookUpEdit2.TabIndexChanged += lookUpEdit2_TabIndexChanged;
+            // 
             // lookUpEdit1
             // 
-            lookUpEdit1.Location = new Point(47, 12);
+            lookUpEdit1.Location = new Point(46, 12);
             lookUpEdit1.MenuManager = barManager1;
             lookUpEdit1.Name = "lookUpEdit1";
             lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
@@ -199,7 +225,7 @@
             lookUpEdit1.Properties.NullText = "";
             lookUpEdit1.Properties.ValueMember = "id";
             lookUpEdit1.Properties.EditValueChanged += lookUpEdit1_Properties_EditValueChanged;
-            lookUpEdit1.Size = new Size(239, 20);
+            lookUpEdit1.Size = new Size(240, 20);
             lookUpEdit1.StyleController = layoutControl1;
             lookUpEdit1.TabIndex = 4;
             lookUpEdit1.EditValueChanged += lookUpEdit1_EditValueChanged;
@@ -208,7 +234,7 @@
             // 
             Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             Root.GroupBordersVisible = false;
-            Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] { grub, emptySpaceItem1, tür, layoutControlItem3, Ulke, sehir, ilce });
+            Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] { grub, emptySpaceItem1, tür, layoutControlItem3, Ulke, ilce });
             Root.Name = "Root";
             Root.Size = new Size(298, 207);
             Root.TextVisible = false;
@@ -219,14 +245,14 @@
             grub.Location = new Point(0, 0);
             grub.Name = "grub";
             grub.Size = new Size(278, 24);
-            grub.TextSize = new Size(23, 13);
+            grub.TextSize = new Size(22, 13);
             // 
             // emptySpaceItem1
             // 
             emptySpaceItem1.AllowHotTrack = false;
-            emptySpaceItem1.Location = new Point(0, 120);
+            emptySpaceItem1.Location = new Point(0, 96);
             emptySpaceItem1.Name = "emptySpaceItem1";
-            emptySpaceItem1.Size = new Size(278, 41);
+            emptySpaceItem1.Size = new Size(278, 65);
             emptySpaceItem1.TextSize = new Size(0, 0);
             // 
             // tür
@@ -235,7 +261,7 @@
             tür.Location = new Point(0, 24);
             tür.Name = "tür";
             tür.Size = new Size(278, 24);
-            tür.TextSize = new Size(23, 13);
+            tür.TextSize = new Size(22, 13);
             // 
             // layoutControlItem3
             // 
@@ -246,59 +272,21 @@
             layoutControlItem3.TextSize = new Size(0, 0);
             layoutControlItem3.TextVisible = false;
             // 
-            // lookUpEdit3
-            // 
-            lookUpEdit3.Location = new Point(47, 60);
-            lookUpEdit3.MenuManager = barManager1;
-            lookUpEdit3.Name = "lookUpEdit3";
-            lookUpEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
-            lookUpEdit3.Size = new Size(239, 20);
-            lookUpEdit3.StyleController = layoutControl1;
-            lookUpEdit3.TabIndex = 7;
-            // 
             // Ulke
             // 
-            Ulke.Control = lookUpEdit3;
+            Ulke.Control = lookUpEditulke;
             Ulke.Location = new Point(0, 48);
             Ulke.Name = "Ulke";
             Ulke.Size = new Size(278, 24);
-            Ulke.TextSize = new Size(23, 13);
-            // 
-            // lookUpEdit4
-            // 
-            lookUpEdit4.Location = new Point(47, 84);
-            lookUpEdit4.MenuManager = barManager1;
-            lookUpEdit4.Name = "lookUpEdit4";
-            lookUpEdit4.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
-            lookUpEdit4.Size = new Size(239, 20);
-            lookUpEdit4.StyleController = layoutControl1;
-            lookUpEdit4.TabIndex = 8;
-            // 
-            // sehir
-            // 
-            sehir.Control = lookUpEdit4;
-            sehir.Location = new Point(0, 72);
-            sehir.Name = "sehir";
-            sehir.Size = new Size(278, 24);
-            sehir.TextSize = new Size(23, 13);
-            // 
-            // lookUpEdit5
-            // 
-            lookUpEdit5.Location = new Point(47, 108);
-            lookUpEdit5.MenuManager = barManager1;
-            lookUpEdit5.Name = "lookUpEdit5";
-            lookUpEdit5.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
-            lookUpEdit5.Size = new Size(239, 20);
-            lookUpEdit5.StyleController = layoutControl1;
-            lookUpEdit5.TabIndex = 9;
+            Ulke.TextSize = new Size(22, 13);
             // 
             // ilce
             // 
-            ilce.Control = lookUpEdit5;
-            ilce.Location = new Point(0, 96);
+            ilce.Control = lookUpEditilce;
+            ilce.Location = new Point(0, 72);
             ilce.Name = "ilce";
             ilce.Size = new Size(278, 24);
-            ilce.TextSize = new Size(23, 13);
+            ilce.TextSize = new Size(22, 13);
             // 
             // XtraForm1
             // 
@@ -315,19 +303,17 @@
             Load += XtraForm1_Load;
             ((System.ComponentModel.ISupportInitialize)layoutControl1).EndInit();
             layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)lookUpEdit2.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)lookUpEditilce.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)barManager1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)lookUpEditulke.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)lookUpEdit2.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)lookUpEdit1.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)Root).EndInit();
             ((System.ComponentModel.ISupportInitialize)grub).EndInit();
             ((System.ComponentModel.ISupportInitialize)emptySpaceItem1).EndInit();
             ((System.ComponentModel.ISupportInitialize)tür).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)lookUpEdit3.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)Ulke).EndInit();
-            ((System.ComponentModel.ISupportInitialize)lookUpEdit4.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)sehir).EndInit();
-            ((System.ComponentModel.ISupportInitialize)lookUpEdit5.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)ilce).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -352,11 +338,9 @@
         private DevExpress.XtraLayout.LayoutControlItem tür;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit5;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit4;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit3;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEditilce;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEditulke;
         private DevExpress.XtraLayout.LayoutControlItem Ulke;
-        private DevExpress.XtraLayout.LayoutControlItem sehir;
         private DevExpress.XtraLayout.LayoutControlItem ilce;
     }
 }

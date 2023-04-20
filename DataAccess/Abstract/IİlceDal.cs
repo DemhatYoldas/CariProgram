@@ -10,5 +10,6 @@ namespace DataAccess.Abstract
     public interface IİlceDal
     {
         void add(İlce ilce);
+        List<İlce> GetList();
     }
 }
