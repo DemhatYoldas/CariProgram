@@ -50,8 +50,14 @@ namespace CariUI
 
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            XtraForm1 form1 = new XtraForm1(_grubService, _turService, _ulkeServis, _sehirServis, _ilceServis);
-            form1.Show();
+
+        }
+
+        private void btncarilistes_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            XtraCariEkle Grubcs = new XtraCariEkle(_grubService, _turService, _ulkeServis, _sehirServis, _ilceServis, _bilgilerimServis);
+            Grubcs.MdiParent = this;
+            Grubcs.Show();
         }
     }
 }

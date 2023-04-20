@@ -60,6 +60,7 @@
             btncarilistes.ImageOptions.Image = (Image)resources.GetObject("btncarilistes.ImageOptions.Image");
             btncarilistes.ImageOptions.LargeImage = (Image)resources.GetObject("btncarilistes.ImageOptions.LargeImage");
             btncarilistes.Name = "btncarilistes";
+            btncarilistes.ItemClick += btncarilistes_ItemClick;
             // 
             // btnGrubekle
             // 
