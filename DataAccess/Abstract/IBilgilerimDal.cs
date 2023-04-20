@@ -10,6 +10,9 @@ namespace DataAccess.Abstract
     public interface IBilgilerimDal
     {
         void add(Bilgilerim bilgilerim);
+        void Update(Bilgilerim bilgilerim);
+        void Delete(Bilgilerim bilgilerim);
+        Bilgilerim Get(int id);
         List<Bilgilerim> GetList();
     }
 }

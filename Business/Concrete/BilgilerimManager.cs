@@ -2,8 +2,8 @@
 using Business.Validation.FluentValidation;
 using Core.CrossCuttingConcems.Validation;
 using DataAccess.Abstract;
-using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
+using FluentValidation.Results;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,6 +46,16 @@ namespace Business.Concrete
 
         public void Delete(Bilgilerim bilgilerim)
         {
+            _bilgilerimDal.Delete(bilgilerim);
+        }
+
+        public Bilgilerim Get(int id)
+        {
+            return _bilgilerimDal.Get(id);
+        }
+
+        public int GetbilgilerimId(string grubName)
+        {
             throw new NotImplementedException();
         }
 
@@ -56,7 +66,15 @@ namespace Business.Concrete
 
         public bool Update(Bilgilerim bilgilerim)
         {
-            throw new NotImplementedException();
+            bool validation = ValidationTool.Validate(new BilgilerimValidator(), bilgilerim);
+            if (validation)
+            {
+                _bilgilerimDal.Update(bilgilerim);
+                MessageBox.Show("Güncelleme işlemi başarıyla Gerçekleşti", "Başarıyla", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return true;
+
+            }
+            return false;
         }
     }
 }

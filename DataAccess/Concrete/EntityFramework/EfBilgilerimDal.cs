@@ -20,9 +20,36 @@ namespace DataAccess.Concrete.EntityFramework
             }
         }
 
-        public List<Bilgilerim> GetList()
+        public void Delete(Bilgilerim bilgilerim)
+        {
+            using (var context = new CurrentDbContext())
+            {
+                context.Bilgilerims.Remove(bilgilerim);
+                context.SaveChanges();
+            }
+        }
+
+        public Bilgilerim Get(int id)
         {
             throw new NotImplementedException();
+        }
+
+        public List<Bilgilerim> GetList()
+        {
+            using (var context = new CurrentDbContext())
+            {
+                var result = context.Bilgilerims.ToList();
+                return result;
+            }
+        }
+
+        public void Update(Bilgilerim bilgilerim)
+        {
+            using (var context = new CurrentDbContext())
+            {
+                context.Bilgilerims.Update(bilgilerim);
+                context.SaveChanges();
+            }
         }
     }
 }

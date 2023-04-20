@@ -39,7 +39,6 @@
             colDurum = new DevExpress.XtraGrid.Columns.GridColumn();
             colEdit = new DevExpress.XtraGrid.Columns.GridColumn();
             repositoryBtnEdit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
-            colDelete = new DevExpress.XtraGrid.Columns.GridColumn();
             repositoryBtnDelete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             txtGrubName = new DevExpress.XtraEditors.TextEdit();
             Root = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -115,7 +114,7 @@
             // 
             // gridView1
             // 
-            gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] { colId, colName, colDurum, colEdit, colDelete });
+            gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] { colId, colName, colDurum, colEdit });
             gridView1.GridControl = gC1;
             gridView1.Name = "gridView1";
             // 
@@ -149,7 +148,7 @@
             colEdit.ColumnEdit = repositoryBtnEdit;
             colEdit.Name = "colEdit";
             colEdit.Visible = true;
-            colEdit.VisibleIndex = 4;
+            colEdit.VisibleIndex = 3;
             // 
             // repositoryBtnEdit
             // 
@@ -158,14 +157,6 @@
             repositoryBtnEdit.Name = "repositoryBtnEdit";
             repositoryBtnEdit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             repositoryBtnEdit.ButtonClick += repositoryBtnEdit_ButtonClick;
-            // 
-            // colDelete
-            // 
-            colDelete.Caption = "Sil";
-            colDelete.ColumnEdit = repositoryBtnDelete;
-            colDelete.Name = "colDelete";
-            colDelete.Visible = true;
-            colDelete.VisibleIndex = 3;
             // 
             // repositoryBtnDelete
             // 
@@ -282,7 +273,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colId;
         private DevExpress.XtraGrid.Columns.GridColumn colName;
         private DevExpress.XtraGrid.Columns.GridColumn colDurum;
-        private DevExpress.XtraGrid.Columns.GridColumn colDelete;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryBtnDelete;
         private DevExpress.XtraGrid.Columns.GridColumn colEdit;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryBtnEdit;

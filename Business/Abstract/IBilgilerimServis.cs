@@ -14,6 +14,9 @@ namespace Business.Abstract
         bool add(Bilgilerim bilgilerim);
         bool Update(Bilgilerim bilgilerim);
         void Delete(Bilgilerim bilgilerim);
+        Bilgilerim Get(int id);
+        int GetbilgilerimId(string grubName);
         List<Bilgilerim> GetList();
+        
     }
 }

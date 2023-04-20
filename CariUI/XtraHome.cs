@@ -9,8 +9,9 @@ namespace CariUI
         private readonly IUlkeServis _ulkeServis;
         private readonly ISehirServis _sehirServis;
         private readonly IİlceServis _ilceServis;
+        private readonly IBilgilerimServis _bilgilerimServis;
 
-        public XtraHome(IGrubService grubService, ITurServis turService, IUlkeServis ulkeServis, ISehirServis sehirServis, IİlceServis ilceServis)
+        public XtraHome(IGrubService grubService, ITurServis turService, IUlkeServis ulkeServis, ISehirServis sehirServis, IİlceServis ilceServis, IBilgilerimServis bilgilerimServis)
         {
             InitializeComponent();
             _grubService = grubService;
@@ -18,6 +19,7 @@ namespace CariUI
             _ulkeServis = ulkeServis;
             _sehirServis = sehirServis;
             _ilceServis = ilceServis;
+            _bilgilerimServis = bilgilerimServis;
         }
 
         private void btnclose_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -42,7 +44,7 @@ namespace CariUI
         private void btnCariEkleme_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             XtraCariEkle cariEkle;
-            cariEkle = new XtraCariEkle(_grubService, _turService, _ulkeServis, _sehirServis, _ilceServis);
+            cariEkle = new XtraCariEkle(_grubService, _turService, _ulkeServis, _sehirServis, _ilceServis, _bilgilerimServis);
             cariEkle.Show();
         }
 

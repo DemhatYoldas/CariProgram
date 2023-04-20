@@ -87,7 +87,7 @@ namespace CariUI
                 //_grubServices.Add(grub);
 
                 // status yada durum için 
-                
+
                 var result = _grubServices.Add(grub);
                 if (result)
                 {

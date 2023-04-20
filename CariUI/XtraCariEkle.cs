@@ -1,12 +1,14 @@
 ﻿using Business.Abstract;
 using DataAccess.Abstract;
 using DevExpress.XtraEditors;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,8 +22,11 @@ namespace CariUI
         IUlkeServis _ulkeServis;
         ISehirServis _sehirServis;
         IİlceServis _ilceServis;
+        IBilgilerimServis _bilgilerimServis;
 
-        public XtraCariEkle(IGrubService grubService, ITurServis turService, IUlkeServis ulkeServis, ISehirServis sehirServis, IİlceServis ilceServis)
+        int _id;
+
+        public XtraCariEkle(IGrubService grubService, ITurServis turService, IUlkeServis ulkeServis, ISehirServis sehirServis, IİlceServis ilceServis, IBilgilerimServis bilgilerimServis)
         {
             InitializeComponent();
             _grubService = grubService;
@@ -29,6 +34,7 @@ namespace CariUI
             _ulkeServis = ulkeServis;
             _sehirServis = sehirServis;
             _ilceServis = ilceServis;
+            _bilgilerimServis = bilgilerimServis;
         }
 
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -67,8 +73,66 @@ namespace CariUI
         }
 
         private void simpleButton6_Click(object sender, EventArgs e)
-        { // kaydet
+        { // kaydet bölümü
 
+            // Güncelleme işlemi aktif çalışıyor grub ekleme kısmıyla aynı ama burada kullanmadım
+
+            if (simpleButton6.Text == "Güncelle")
+            {
+                var findgrup = _bilgilerimServis.Get(_id);
+                findgrup.AdSoyad = textEdityetkiliad.Text.ToLower();
+                findgrup.TabelaAdi = textEdityetkiliad.Text;
+                findgrup.Postakodu = textEditpostakod.Text;
+                findgrup.Adres = textEditadres.Text;
+                findgrup.Sabitno = textEditsabitno.Text;
+                findgrup.Gsm = textEditgsm.Text;
+                findgrup.Fax = textEditfax.Text;
+                findgrup.Eposta = textEditeposta.Text;
+                findgrup.Url = textEditurl.Text;
+                findgrup.Vergidaire = textEditvergidaire.Text;
+                findgrup.Vergino = textEditvergino.Text;
+                var result = _bilgilerimServis.Update(findgrup);
+                if (result)
+                {
+
+                    GetList();
+                    Clear();
+
+                }
+
+            }
+            else
+            {
+                // Kaydet işlemi
+                Bilgilerim bilgilerim = new Bilgilerim
+                {
+
+                    TabelaAdi = textEdityetkiliad.Text,
+                    Postakodu = textEditpostakod.Text,
+                    Adres = textEditadres.Text,
+                    Sabitno = textEditsabitno.Text,
+                    Gsm = textEditgsm.Text,
+                    Fax = textEditfax.Text,
+                    Eposta = textEditeposta.Text,
+                    Url = textEditurl.Text,
+                    Vergidaire = textEditvergidaire.Text,
+                    Vergino = textEditvergino.Text,
+                    AdSoyad = textEdityetkiliad.Text.ToLower()
+                };
+
+                //_grubServices.Add(grub);
+
+                // status yada durum için 
+
+                var result = _bilgilerimServis.add(bilgilerim);
+                if (result)
+                {
+
+                    GetList();
+                    Clear();
+                }
+
+            }
 
         }
 
@@ -106,6 +170,19 @@ namespace CariUI
             lookUpEditilce.Properties.DataSource = tt;
         }
 
+        void Clear()
+        {
+            textBoxtabelaad.Text = " ";
+            simpleButtonclose.Text = "Kapat";
+            simpleButton6.Text = "Kaydet";
+        }
+
+        void GetList()
+        {
+            var result = _bilgilerimServis.GetList();
+            gridControl1.DataSource = result;
+        }
+
         private void XtraHomes_Load(object sender, EventArgs e)
         {// sayfa
 
@@ -118,6 +195,24 @@ namespace CariUI
             var sehirs = _sehirServis.GetList();
             lookUpEditsehir.Properties.DataSource = sehirs;
 
+
+            var result = _bilgilerimServis.GetList();
+            gridControl1.DataSource = result;
+
+
+
+        }
+
+        private void simpleButtonclose_Click(object sender, EventArgs e)
+        {// kapat
+            if (simpleButtonclose.Text == "Vazgeç")
+            {
+                Clear();
+            }
+            else
+            {
+                this.Close();
+            }
         }
     }
 }
